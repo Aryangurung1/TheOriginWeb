@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <script
       src="https://kit.fontawesome.com/9560fde36b.js"
@@ -19,26 +19,93 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background-color: rgba(223, 223, 223, 0.452);
+      }
+      .sub-container {
+        border: 1px solid red;
+        height: 300px;
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading {
+        font-family: "Archivo", sans-serif;
+        font-size: 55px;
+        font-weight: 600;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+      }
+      .paragraph {
+        font-size: 16px;
+        font-weight: 100;
+        font-family: "DM Sans", sans-serif;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+      }
+      .container2{
+        width: 55%;
+        height: 500px;
+        border: 1px solid black;
+      }
+      .container3{
+        width: 40%;
+        height: 500px;
+        border: 1px solid black;
+      }
+      </style>
+  </head>
+  <body>
     <header>
-        <nav>
-          <figure>
-            <a href="index.html"
-              ><img src="../img/originlogo.png" class="logo"
-            /></a>
-          </figure>
-          <div class="lists">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#" class="active">About</a></li>
-            </ul>
+      <nav>
+        <figure>
+          <a href="index.html"
+            ><img src="../img/originlogo.png" class="logo"
+          /></a>
+        </figure>
+        <div class="lists">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="active">About</a></li>
+          </ul>
+        </div>
+        <button type="button" name="myButton">Get Started</button>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <div class="sub-container">
+          <div>
+            <h1 class="heading">About Us</h1>
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+            reiciendis magnam ut, optio, omnis labore et voluptatum corrupti
+            ipsa deleniti odio accusamus asperiores enim illum eaque iusto nihil
+            ex quod.
+          </p>
           </div>
-          <button type="button" name="myButton">Get Started</button>
-        </nav>
-      </header>
-</body>
+        </div>
+      </section>
+      <section style="border: 1px solid red; width: 85%; height: auto; margin: 10px auto; padding: 20px; display: flex; justify-content: space-between;">
+        <div class="container2">
+          <h2 class="heading" style="font-size: 40px; margin-top: 50px; text-align: justify;">We are The Tech Company Service</h2>
+          <p class="paragraph" style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="container3">
+
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
