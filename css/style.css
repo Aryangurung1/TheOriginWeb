@@ -83,7 +83,7 @@ footer button:hover {
 .fa-brands{
     color:  #8d38ed;
     position: relative;
-    bottom: 20px;
+    top: 15px;
     font-size: 25px;
     margin: 10px;
     cursor: pointer;
