@@ -38,6 +38,8 @@ nav figure img{
     height: auto;
     max-width: 150px;
     bottom: 40px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 nav .lists ul{
