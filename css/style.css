@@ -36,8 +36,7 @@ nav{
 nav figure img{
     position: relative;
     height: auto;
-    max-width: 150px;
-    bottom: 40px;
+    max-width: 145px;
     overflow-clip-margin: content-box;
     overflow: clip;
 }
