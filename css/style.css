@@ -24,7 +24,7 @@ li{
 }
 
 nav{
-    /* position:ixed; */
+    position:fixed;
     background-color: #ffffff;
     height: 75px;
     width: 100%;
