@@ -64,6 +64,19 @@ nav button:hover {
     color: #ffffff;
     background-color:  #7e21e7;
 }
+main .fa-solid{
+    color: #8d38ed;
+}
+main .fa-brands{
+    position: relative;
+    top: 22px;
+    left: 40px;
+    color:  #8d38ed;
+    font-size: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
 footer button {
     margin-left: 20px;
     position: relative;
@@ -80,7 +93,7 @@ footer button:hover {
     color: #000000;
     background-color: #eee7e7;
 }
-.fa-brands{
+footer .fa-brands{
     color:  #8d38ed;
     position: relative;
     top: 15px;
