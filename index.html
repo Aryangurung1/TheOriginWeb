@@ -16,8 +16,9 @@
             font-family: 'Archivo', sans-serif;
         }
         .prac{
-            height:100vh;
+            
             border: solid 3px red;
+            height:130vh;
         }
         .bor{
             border: 2px solid palevioletred;
@@ -130,6 +131,25 @@
             color:#320f5b;
             cursor:pointer;
         }
+        .question{
+            font-size: 19px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 30px;
+            background-color: rgb(237,240,239);
+            color: #0D1D20;
+            
+        }
+        .accordion-button:not(.collapsed)
+        {
+            color:#8d38ed;
+            background-color: rgb(237,240,239);
+            border: none;
+        }
+        .accordion-button:focus {
+        outline: 0 ;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
     
     </style>
     <script src="https://kit.fontawesome.com/d3acb3ae7f.js" crossorigin="anonymous"></script>
@@ -137,14 +157,14 @@
 <body>
   
 
-    <div class="container-fluid" style="margin-top:200px;">
+    <div class="container-fluid" style="margin-top:200px; margin-bottom: 200px;">
         <div class="row">
             <!--image section-->
             <div class="col-12 prac col-lg-6  order-lg-2" style="padding: 30px;">
                 <div class="container rel">
                     <img class="img-fluid abs" src="img/index.jpg">
                     <img class="img-fluid abs" src="img/young-girl.png"
-                        style="z-index: 2; max-height: 103vh; margin-top: -13vh;">
+                        style="z-index: 2; max-height: 130vh;  margin-top: -13vh;">
                 </div>
             </div>
     
@@ -242,13 +262,13 @@
         </div>
     </div>
 
-    <div class="container-fluid rel" style="height:150vh; background-color: rgb(237,240,239); margin-top:100px;">
+    <div class="container-fluid" style=" background-color: rgb(237,240,239); margin-top:100px;">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col bor col-lg-4">
                 <p style="padding-top:200px;  font-size:55px; letter-spacing: 1px; font-weight: 900; color:#0D1D20; line-height: 1;">The Best Quality Services for you</p>
                 <p style=" padding-bottom:100px; font-size: 17px; color:#587274;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
             </div>
-            <div class="col bor col-lg-8" style="padding-top:50px;">
+            <div class="col bor col-lg-8" style="padding-top:50px; padding-bottom: 50px;">
                 <div class="row row-cols-1 row-cols-lg-2">
                     <div class="col bor service">
                         <div><!--icon-->
@@ -340,7 +360,91 @@
             </div>
         </div>
     </div>
-    <div style="height:100vh"></div>
+    
+    <div class="container-fluid bor" style=" background-color: rgb(237,240,239); margin-top:200px; padding-top: 100px; padding-bottom: 100px;"><!--last section-->
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col"><!--div 1-->
+                <p style="padding-top:40px;  font-size:55px; letter-spacing: 1px; font-weight: 900; color:#0D1D20; line-height: 1;">Frequently Asked Questions</p>
+            </div>
+            <div class="col"><!--div 2-->
+                <div class="accordion accordion-flush" id="accordionContainer"><!--accordion conntainer-->
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button  question" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#question1"
+                                aria-expanded="true" aria-controls="question1">
+                                What are the core services?
+                            </button>
+                        </h2>
+                        <div id="question1" class="accordion-collapse collapse"
+                         aria-labelledby="headingOne"
+                            data-bs-parent="#accordionContainer">
+                            <div class="accordion-body">
+                                <p style=" font-size: 17px; color:#587274; padding:30px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button  question" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#question2"
+                                aria-expanded="true" aria-controls="question2">
+                                Are the services delivered in time?
+                            </button>
+                        </h2>
+                        <div id="question2" class="accordion-collapse collapse"
+                         aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionContainer">
+                            <div class="accordion-body">
+                                <p style=" font-size: 17px; color:#587274; padding:30px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button  question" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#question3"
+                                aria-expanded="true" aria-controls="question3">
+                                How many departments are there?
+                            </button>
+                        </h2>
+                        <div id="question3" class="accordion-collapse collapse"
+                         aria-labelledby="headingThree"
+                            data-bs-parent="#accordionContainer">
+                            <div class="accordion-body">
+                                <p style=" font-size: 17px; color:#587274; padding:30px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button  question" type="button" 
+                            data-bs-toggle="collapse" data-bs-target="#question4"
+                                aria-expanded="true" aria-controls="question4">
+                                When can you reach out?
+                            </button>
+                        </h2>
+                        <div id="question4" class="accordion-collapse collapse"
+                         aria-labelledby="headingFour"
+                            data-bs-parent="#accordionContainer">
+                            <div class="accordion-body">
+                                <p style=" font-size: 17px; color:#587274; padding:30px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     
  <script src="js/bootstrap.min.js"></script> 
