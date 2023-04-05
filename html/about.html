@@ -155,6 +155,13 @@
       margin-top: 180px;
 
     }
+    .container9{
+      width: 62%;
+      display: flex;
+      border: 1px solid black;
+      margin-top: 70px; 
+      margin-left: 31%;
+    }
     .check-mark{
       font-size: 20px;
       height: 25px;
@@ -218,6 +225,27 @@
       height: 100%;
       padding-bottom: 20px;
     }
+    .groupPhoto{
+      margin-top: 60px;
+      margin-left: 190px;
+      width: 90%; 
+      height: 220%;
+      border-radius: 5px; 
+      transform: translateX(-600px);
+      transition: all 1s;
+    }
+    .purpleBackground{
+      background-color: #8d38ed;
+      width: 80%;
+      height: 130%;
+      position: relative;
+      bottom: 160px;
+      left: 50px;
+      z-index: -1;
+      border-radius: 5px;
+      opacity: 0;
+      transition: all 1s;
+    }
 
     .main-container:hover .container:hover .container8-big:hover .image2:hover .back{
       background-color: #8d38ed;
@@ -250,6 +278,26 @@
       position: relative;
       right: 20px;
       bottom: 31px;
+    }
+  
+    .SlideIn{
+      transform: translateX(0px);
+
+    }
+    
+    .FadeIn{
+      opacity: 1;
+      animation-duration: 0.8s;
+    }
+
+    .main-container .container7 .image2 .purpleBackground{
+      animation-name: FadeIn;
+      animation-duration: 1s;
+    }
+
+    .main-container .container7 .image2 .groupPhoto{
+      animation-name: SlideIn;
+      animation-duration:1S;
     }
   </style>
 </head>
@@ -333,22 +381,9 @@
       <div class="container7">
         <div class="image2">
           <div style="width: 70%; height: 45%;">
-            <img src="/img/group-photo-edited.jpg" alt="people" style="
-                margin-top: 60px;
-                margin-left: 190px;
-                width: 90%; 
-                height: 220%;
-                border-radius: 5px;" />
+            <img class="groupPhoto" src="/img/group-photo-edited.jpg" alt="people" />
           </div>
-          <div style="
-                background-color: #8d38ed;
-                width: 80%;
-                height: 130%;
-                position: relative;
-                bottom: 160px;
-                left: 50px;
-                z-index: -1;
-                border-radius: 5px;">
+          <div class="purpleBackground">
                 
           </div>
         </div>
@@ -382,7 +417,7 @@
             </p>
             <div class="check-mark" style="margin-left: 12%;">
               <i class="fa-solid fa-circle-check"></i>
-             </div>
+            </div>
             <p class="sub-heading6">
               Up - to - date Technology
             </p>
@@ -451,8 +486,8 @@
             <p class="sub-heading7" style="margin-top: 8px;">Novel Koirala</p>
           </div>
           <div style="display: flex;">
-            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 8px;"></i>
-            <p class="sub-paragraph6">yes</p>
+            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 13px;"></i>
+            <p class="sub-paragraph6">@Gaida</p>
           </div>
         </div>
         <div class="container8">
@@ -467,7 +502,8 @@
             <p class="sub-heading7">Aryan manche</p>
           </div>
           <div style="display: flex;">
-            <p class="sub-paragraph6">yesss</p>
+            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            <p class="sub-paragraph6">@realMancha_NotRobot123</p>
           </div>
         </div> 
         <div class="container8">
@@ -482,7 +518,8 @@
             <p class="sub-heading7">Anuvab Dhakal</p>
           </div>
           <div style="display: flex;">
-            <p class="sub-paragraph6">yesss</p>
+            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            <p class="sub-paragraph6">@imInLoveWithACriminal</p>
           </div>
         </div>
         <div class="container8">
@@ -497,11 +534,68 @@
             <p class="sub-heading7">Koi milgaya</p>
           </div>
           <div style="display: flex;">
-            <p class="sub-paragraph6">yesss</p>
+            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            <p class="sub-paragraph6">@JAAAADUUUUUUUU</p>
           </div>
         </div>
+      </div>
+      <div class="container9">
+        <div class="container3" style="display: flex;">
+          <div class="check-mark">
+            <i class="fa-solid fa-circle-check"></i>
+          </div> 
+          <p class="sub-heading6">Expert Developer Team</p>
+        </div>
+        <div class="container3" style="margin-left: 100px; display: flex;">
+          <div class="check-mark">
+            <i class="fa-solid fa-circle-check"></i>
+          </div> 
+          <p class="sub-heading6">Excellent skill </p>
+        </div>  
+      </div>
+      <div class="container9" style="margin-top: 10px;">
+        <div style="width: 47%; border: 1px solid black;">
+          <p class="sub-paragraph6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
+          </p>
+        </div>
+        <div style=" width: 47%; margin-left:  46px; border: 1px solid black;">
+          <p class="sub-paragraph6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
+        </p>
+        </div>  
+      </div>
     </section>
+
   </main>
+  <script>
+    const observer1 = new IntersectionObserver((entries) =>{
+      entries.forEach((entry) =>{
+        console.log(entry)
+        if(entry.isIntersecting){
+          entry.target.classList.add('SlideIn');
+
+        }
+      });
+    });
+    const hiddenElement1 = document.querySelectorAll('.groupPhoto')
+    hiddenElement1.forEach((el) => observer1.observe(el));
+  </script>
+
+<script>
+  const observer2 = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+      console.log(entry)
+      if(entry.isIntersecting){
+        entry.target.classList.add('FadeIn');
+
+      }
+    });
+  });
+  const hiddenElement2 = document.querySelectorAll('.purpleBackground')
+  hiddenElement2.forEach((el) => observer2.observe(el));
+</script>
 </body>
+
 
 </html>
