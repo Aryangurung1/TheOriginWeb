@@ -36,11 +36,12 @@
 
     .heading {
       font-family: "Archivo", sans-serif;
-      font-size: 55px;
+      font-size: 2.7rem;
       font-weight: 600;
       text-align: center;
-      padding: 5px;
-      margin: 5px;
+      padding-left: 10px;
+    
+  
     }
 
     .paragraph {
@@ -299,14 +300,95 @@
       animation-name: SlideIn;
       animation-duration:1S;
     }
+
+    .toggle-button{
+      margin-top: 30px;
+      font-size: 1rem;
+      margin-left: 49%;
+      cursor: pointer;
+      display: none;
+    }
+    .dropdown-menu{
+      display: none;
+      position: absolute;
+      right: 2rem;
+      height: 0px;
+      top: 95px;
+      width: 300px;
+      background-color: #e1e1e1;
+      backdrop-filter: blur(15px);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    }
+
+    .dropdown-menu li:hover{
+      background-color:#ffffff;
+    }
+    .dropdown-menu.open{
+      height: 240px;
+    }
+    
+    .dropdown-menu li{
+      padding: 0.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dropdown-menu .button-T2{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media(max-width: 992px){
+      .response-heading .lists ,
+      .response-heading .button-T{
+        display: none;
+      }
+      .logo{
+        height: 3.5rem;
+
+      }
+
+      .toggle-button{
+        display: block;
+      }
+      .dropdown-menu{
+        display: block;
+      }
+    }
+
+    @media(max-width: 992px){
+      .container .sub-container{
+        width: 60%;
+        margin-top: 20px;
+      }
+    }
+    @media(max-width: 802px){
+      .main-container .container2{
+        width: 100%;
+        display: block;
+      }
+      .main-container .container2 .responsive1 .heading{
+        font-size: -px;
+        text-align: none;
+      }
+      .main-container .container3{
+        width: 50%;
+        height: 50%;
+        margin-left: 150px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="response-heading">
       <figure>
-        <a href="index.html"><img src="../img/originlogo.png" class="logo" /></a>
+        <a  href="index.html"><img class="logo" src="../img/originlogo.png" class="logo" /></a>
       </figure>
       <div class="lists">
         <ul>
@@ -316,7 +398,17 @@
           <li><a href="#" class="active">About</a></li>
         </ul>
       </div>
-      <button type="button" name="myButton">Get Started</button>
+      <button type="button" class="button-T" name="myButton">Get Started</button>
+      <div class="toggle-button">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+      <di class="dropdown-menu">
+          <li><a style="text-decoration: none;" href="#">Home</a></li>
+          <li><a style="text-decoration: none;" href="#">Services</a></li>
+          <li><a style="text-decoration: none;" href="#">Contact</a></li>
+          <li><a style="text-decoration: none;" href="#" class="active">About</a></li>
+          <button type="button" class="button-T2" name="myButton">Get Started</button>
+      </di>
     </nav>
   </header>
   <main>
@@ -335,8 +427,8 @@
     </section>
     <section class="main-container">
       <div class="container2">
-        <div style="border: 1px solid purple">
-          <h2 class="heading" style="font-size: 40px; margin-top: 50px; text-align: justify">
+        <div class="responsive1" style="border: 1px solid purple">
+          <h2 class="heading" style=" margin-top: 50px; text-align: justify">
             We are The Tech Company Service
           </h2>
           <p class="sub-paragraph" style="text-align: justify">
@@ -365,7 +457,7 @@
       <div class="container3">
         <div class="image">
           <img src="../img/young-girl.png" alt="younggirl" style="width: 100%; height: 100%" />
-          <div style="
+          <div class="Rback" style="
                 background-color: #8d38ed;
                 width: 100%;
                 height: 87%;
@@ -594,6 +686,18 @@
   });
   const hiddenElement2 = document.querySelectorAll('.purpleBackground')
   hiddenElement2.forEach((el) => observer2.observe(el));
+</script>
+
+<script>
+  const toggleBTN = document.querySelector('.toggle-button')
+  const toggleBTNIcon = document.querySelector('.toggle-button i')
+  const dropDownMenu = document.querySelector('.dropdown-menu')
+
+  toggleBTN.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+
+  }
+
 </script>
 </body>
 
