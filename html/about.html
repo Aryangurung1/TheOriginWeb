@@ -25,6 +25,62 @@
       background-color: rgba(223, 223, 223, 0.452);
     }
 
+    .container2 {
+      width: 55%;
+      border: 1px solid black;
+    }
+    .container3 {
+      width: 40%;
+      height: auto;
+      border: 1px solid black;
+      /* overflow: hidden; */
+    }
+    .container4{
+      width: 45%;
+      height: 500px;
+      border: 1px solid black;
+    }
+    .container5{
+      width: 50%;
+      height: 500px;
+      border: 1px solid black
+    }
+
+    .container6{
+      height: 60%; 
+      width: auto;
+      border: 1px solid black;
+      
+    }
+    .container7{
+      width: 45%;
+      height: auto;
+      border: 1px solid black;
+    }
+    .container8{
+      width: 20%;
+      border: 1px solid black;
+      height: 63%;
+      margin: 15px;
+      margin-top: px;
+    }
+    .container8-big{
+      width: 25%;
+      border: 1px solid black;
+      height: 80%;
+      margin-top: px;
+
+    }
+    .container9{
+      width: 62%;
+      display: flex;
+      border: 1px solid black; 
+      margin-left: 29%;
+      position: relative;
+      bottom: 120px;
+    }
+
+
     .sub-container {
       border: 1px solid red;
       height: 300px;
@@ -32,6 +88,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .sub-container2 {
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .sub-container3 {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background-color: rgba(223, 223, 223, 0.452);
+      border: 1px solid black;
+       width: 100%
     }
 
     .heading {
@@ -54,6 +126,13 @@
       font-family: Archivo, Sans-serif;
       letter-spacing: 0.02cm;
       line-height: 1.1;
+    }
+    .heading3{
+      font-size: 45px;
+      text-align: left;
+      font-family: "Archivo", sans-serif;
+      font-weight: 600;
+      padding-left: 10px;
     }
 
       
@@ -162,18 +241,6 @@
 
     }
 
-    .container2 {
-      width: 55%;
-      border: 1px solid black;
-    }
-
-    .sub-container2 {
-      border: 1px solid black;
-      display: flex;
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-
     .icon-container i {
       color: #8d38ed;
       font-size: 35px;
@@ -190,13 +257,6 @@
       height: 70px;
     }
 
-    .container3 {
-      width: 40%;
-      height: auto;
-      border: 1px solid black;
-      /* overflow: hidden; */
-    }
-
     .image {
       width: 100%;
       height: 89%;
@@ -208,50 +268,7 @@
       height: 89%;
      
     }
-    .container4{
-      width: 45%;
-      height: 500px;
-      border: 1px solid black;
-    }
-    .container5{
-      width: 50%;
-      height: 500px;
-      border: 1px solid black
-    }
 
-    .container6{
-      height: 60%; 
-      width: auto;
-      border: 1px solid black;
-      
-    }
-    .container7{
-      width: 45%;
-      height: auto;
-      border: 1px solid black;
-    }
-    .container8{
-      width: 20%;
-      border: 1px solid black;
-      height: 93%;
-      margin: 15px;
-      margin-top: 70px;
-    }
-    .container8-big{
-      width: 25%;
-      border: 1px solid black;
-      height: 120%;
-      margin: 15px;
-      margin-top: 180px;
-
-    }
-    .container9{
-      width: 62%;
-      display: flex;
-      border: 1px solid black;
-      margin-top: 70px; 
-      margin-left: 31%;
-    }
     .check-mark{
       font-size: 20px;
       height: 25px;
@@ -311,30 +328,30 @@
       transition: all 1s;
     }
 
-    .main-container:hover .container:hover .container8-big:hover .image2:hover .back{
+    .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .back{
       background-color: #8d38ed;
       transition: 0.5s;
       position: relative;
-      bottom: 101%;
+      bottom: 100%;
     }
 
-    .main-container:hover .container:hover .container8-big:hover .image2:hover .portfolio{
+    .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .portfolio{
       transition-duration:0.8s;
       right: 20px;
-      height: 110%;
-      width: 110%;
+      height: 102%;
+      width: 104%;
       position: relative;
       right: 20px;
       bottom: 40px;
     }
 
-    .main-container:hover .container:hover .container8:hover .image2:hover .back{
+    .main-container:hover .sub-container3:hover .container8:hover .image2:hover .back{
       background-color: #8d38ed;
       transition: 0.5s;
       position: relative;
       bottom: 103%;
     }
-    .main-container:hover .container:hover .container8:hover .image2:hover .portfolio{
+    .main-container:hover .sub-container3:hover .container8:hover .image2:hover .portfolio{
       transition-duration:0.7s;
       right: 20px;
       height: 110%;
@@ -486,14 +503,30 @@
         height: 300%;
         bottom: 50px;
       }
-      .main-container3 div .heading{
-        font-size: 30px;
+      .main-container3 .heading3{
+        font-size: 37px;
       }
-      .main-container3 div .container8-big{
-        
+      .main-container3 .sub-paragraph8{
+        font-size: 15px;
+        width: 50%;
       }
-      .main-container3 div .container8{
-       
+      .main-container3 .button{
+        font-size: 10px;
+        width: 24%;
+        right: 30px;
+      }
+      .main-container .sub-container3 div .container8-big{
+        flex-grow: 47%;
+        width: 47%;
+      }
+      .main-container .sub-container3 div .container8{
+       width: 47%;
+      }
+      .main-container .container9{
+        position: relative;
+        margin-top: 60%;
+        bottom: 60%;
+        right: 120px;   
       }
 
     }
@@ -527,6 +560,18 @@
         font-size: 15px;
         width: 100%;
         margin-right: 40px;
+      }
+      .main-container3 .sub-container3  .container8-big{
+        width: 40%;
+        height: 93%;
+        margin: 15px;
+      }
+      .main-container3 .sub-container3  .container8{
+       width: 40%;
+      }
+      .main-container .container9{
+        position: relative;
+        bottom: 60px;   
       }
     }
     
@@ -691,7 +736,7 @@
     </section>
     <section class="main-container3" >
       <div style="width: 100%; height: 40%; border: 1px solid black;" >
-        <p class="heading" style="font-size: 45px;text-align: left;">
+        <p class="heading3">
           Meet our Professional Team
         </p>
         <p class="sub-paragraph8" >
@@ -708,7 +753,7 @@
       </div>
     </section>
     <section class="main-container"  >
-      <div class="container" style="border: 1px solid black; width: 100%; ">
+      <div class="sub-container3">
         <div class="container8-big">
           <div class="image2">
             <img class="portfolio" src="../img/young-girl.png" alt="younggirl"/>
