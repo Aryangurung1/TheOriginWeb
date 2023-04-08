@@ -24,7 +24,7 @@ li{
 }
 
 nav{
-  /* position:ixed; */
+  position:fixed;
   background-color: #ffffff;
   height: 75px;
   width: 100%;
@@ -64,6 +64,52 @@ nav button:hover {
   color: #ffffff;
   background-color:  #7e21e7;
 }
+main .fa-solid{
+  color: #8d38ed;
+}
+main .fa-brands{
+  position: relative;
+  top: 22px;
+  left: 40px;
+  color:  #8d38ed;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+main label{
+  line-height: 2.3;
+  color: #000000;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+main textarea{
+  font-size: 16px;
+  font-family: "DM Sans";
+}
+main input,textarea::placeholder{
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #02010100
+}
+main button {
+  color: #ffffff;
+  width: 170px;
+  height: 56px;
+  background-color: #8d38ed;
+  font-family: "Archivo";
+  font-size: 16px;
+  border: 0px solid #ffffff;
+  border-radius: 4px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+main button:hover {
+  color: #ffffff;
+  background-color: #7e21e7;
+}
+
 footer button {
   margin-left: 20px;
   position: relative;
@@ -80,7 +126,7 @@ footer button:hover {
   color: #000000;
   background-color: #eee7e7;
 }
-.fa-brands{
+footer .fa-brands{
   color:  #8d38ed;
   position: relative;
   top: 15px;
