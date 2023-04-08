@@ -1,13 +1,15 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
-body{
+body {
   background-color: #f4f4f4;
 }
 
-nav .lists ul a{
+/* ----------- nav bar -------------- */
+
+nav .lists ul a {
   color: black;
   text-decoration: none;
   padding: 0 22px;
@@ -15,16 +17,18 @@ nav .lists ul a{
   font-weight: 600;
   font-family: 'Archivo', sans-serif;
 }
-nav .lists ul li .active, nav .lists ul a:hover{
-  color:  #8d38ed;
+
+nav .lists ul li .active,
+nav .lists ul a:hover {
+  color: #8d38ed;
 }
 
-li{
+li {
   list-style: none;
 }
 
-nav{
-  position:fixed;
+nav {
+  position: fixed;
   background-color: #ffffff;
   height: 75px;
   width: 100%;
@@ -33,17 +37,18 @@ nav{
   justify-content: space-around;
   z-index: 6;
 }
-nav figure img{
+
+nav figure img {
   position: relative;
   top: 7px;
-  left:10px;
+  left: 10px;
   height: auto;
   max-width: 130px;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
 
-nav .lists ul{
+nav .lists ul {
   display: flex;
   margin-top: 30px;
 }
@@ -53,62 +58,139 @@ nav button {
   top: 12px;
   color: #ffffff;
   height: 50px;
-  background-color:  #8d38ed;
+  background-color: #8d38ed;
   font-size: 16px;
   border: 0px solid #ffffff;
   border-radius: 5px;
   padding: 13px 28px;
   cursor: pointer;
 }
+
 nav button:hover {
-  color: #ffffff;
-  background-color:  #7e21e7;
-}
-main .fa-solid{
-  color: #8d38ed;
-}
-main .fa-brands{
-  position: relative;
-  top: 22px;
-  left: 40px;
-  color:  #8d38ed;
-  font-size: 20px;
-  margin: 5px;
-  cursor: pointer;
-}
-main label{
-  line-height: 2.3;
-  color: #000000;
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 600;
-}
-main textarea{
-  font-size: 16px;
-  font-family: "DM Sans";
-}
-main input,textarea::placeholder{
-  font-family: "DM Sans";
-  font-size: 16px;
-  font-weight: 400;
-  background-color: #02010100
-}
-main button {
-  color: #ffffff;
-  width: 170px;
-  height: 56px;
-  background-color: #8d38ed;
-  font-family: "Archivo";
-  font-size: 16px;
-  border: 0px solid #ffffff;
-  border-radius: 4px;
-  padding: 16px 32px;
-  cursor: pointer;
-}
-main button:hover {
   color: #ffffff;
   background-color: #7e21e7;
 }
+
+/* ---------- main section ---------- */
+
+.main-container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-1st-container {
+  width: 490px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-h1 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 52px;
+  color: #0D1D20
+}
+
+.main-p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: #586274;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main-second {
+  background-color: #ffffff;
+  height: 900px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.second-first {
+  position: relative;
+  left: 7%;
+  top: 15%;
+  width: 510px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: inline-block;
+}
+
+.second-h1 {
+  margin-bottom: 25px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.second-p {
+  margin-bottom: 35px;
+  line-height: 25px;
+  color: #587274;
+  font-size: 16px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.detail {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.extra {
+  margin-top: 25px;
+  display: flex;
+  width: 450px;
+  height: 52px;
+  border: 1px solid #D5D5D7;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form {
+  position: relative;
+  top: 13%;
+  right: 6%;
+  border: 1px solid #D5D5D7;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+  width: 645px;
+  height: 580px
+}
+
+.form-first {
+  padding: 45px;
+  width: 550px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  height: 25px;
+  width: 234px;
+  padding: 12px;
+}
+
+.subject {
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  height: 25px;
+  width: 96%;
+  padding: 12px;
+}
+
+/* ---------- footer section ---------- */
 
 footer button {
   margin-left: 20px;
@@ -122,43 +204,135 @@ footer button {
   padding: 13px 28px;
   cursor: pointer;
 }
+
 footer button:hover {
   color: #000000;
   background-color: #eee7e7;
 }
-footer .fa-brands{
-  color:  #8d38ed;
+
+footer .fa-brands {
+  color: #8d38ed;
   position: relative;
   top: 15px;
   font-size: 25px;
   margin: 10px;
   cursor: pointer;
 }
-footer ol li a{
+
+footer ol li a {
   text-decoration: none;
 }
-footer input::placeholder{
+
+footer input::placeholder {
   color: #fffffff1;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
-  
-  padding:14px 16px;
+
+  padding: 14px 16px;
 }
-footer h3{
+
+footer h3 {
   color: #ffffff;
   margin-bottom: 30px;
   font-family: 'Archivo', sans-serif;
   font-size: 18px;
 }
-footer ol li a{
-  color:#ffffffc4;
+
+footer ol li a {
+  color: #ffffffc4;
 }
-footer .aa{
+
+footer .aa {
   margin-top: 20px;
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
 }
-footer .fa-solid{
+
+footer .fa-solid {
   font-size: 40px;
   color: #ffffff;
+}
+
+@media (max-width:780px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-container {
+    width: 100%;
+    height: 70%;
+    padding: 50px;
+    margin-bottom: 50px;
+  }
+
+  .main-1st-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-h1 {
+    font-size: 50px;
+  }
+
+  .main-second {
+    background-color: #fff;
+    height:150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .second-first {
+    position: relative;
+    top: 0;
+    bottom: 30%;
+    width: 50%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: inline-block;
+  }
+
+  .second-h1 {
+    margin-bottom: 25px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .second-p {
+    margin-bottom: 35px;
+    line-height: 25px;
+    color: #587274;
+    font-size: 12px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .extra {
+    margin-top: 25px;
+    display: flex;
+    width: 300px;
+    height: 52px;
+    border: 1px solid #D5D5D7;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  .form {
+    position: relative;
+    left: 42px;
+    top: 100px;
+    border: 1px solid #D5D5D7;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+    width: 645px;
+    height: 580px
+  }
+  .map {
+    display: none;
+  }
 }
