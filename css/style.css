@@ -195,23 +195,24 @@ nav button:hover {
 .first-footer {
   border-bottom: 0.5px solid rgb(115, 115, 115);
   background-color: rgb(14 24 24);
-  height: 270px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .first-container-footer {
   border: 0;
   border-radius: 5px;
   background-color: #8d38ed;
-  width: 1240px;
-  height: 205px;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 .subscribe-section {
   padding: 60px;
+  padding-right: 0;
+  width: 500px;
   display: inline-block;
-  align-items: baseline;
-  width: 470px;
 }
 
 .subscribe-section h1{
@@ -365,19 +366,6 @@ footer .fa-solid {
     height: 580px;
   }
 }
-.first-container-footer {
-  border: 0;
-  border-radius: 5px;
-  background-color: #8d38ed;
-  width: 100%;
-  height: 180px;
-}
-
-.subscribe-section {
-  display: inline-block;
-  align-items: center;
-  width: 100%;
-}
 
 .footer-third-part {
   background-color: rgb(14 24 24);
@@ -412,10 +400,14 @@ footer .fa-solid {
 }
 
 .placeholder_btn{
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  left: 90px;
-  bottom: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 60px;
+  padding-left: 0;
 }
 
 .placeholder_btn input{
@@ -478,6 +470,9 @@ footer .fa-solid {
   padding: 30px;
   margin-top: 5px;
   height: 65%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
 
   footer button {
@@ -488,6 +483,7 @@ footer .fa-solid {
 
   .subscribe-section {
     width: 85%;
+    padding: 0;
     
   }
 
@@ -496,6 +492,11 @@ footer .fa-solid {
     font-size: 30px;
     text-align: center;
     
+  }
+
+  .placeholder_btn{
+    flex-direction: column;
+    padding: 0;
   }
 
   .placeholder_btn input{
