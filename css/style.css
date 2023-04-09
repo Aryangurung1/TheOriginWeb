@@ -1,4 +1,4 @@
-* {
+  * {
   padding: 0;
   margin: 0;
 }
@@ -523,7 +523,10 @@ footer .fa-solid {
     text-align: center;
     margin-top: 15px;
     font-size: 15px;
-
+    
+     .map {
+    display: none;
+    }
   
   }
 }
@@ -532,3 +535,4 @@ footer .fa-solid {
   
 
 }
+  
