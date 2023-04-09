@@ -1,74 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script
+      src="https://kit.fontawesome.com/9560fde36b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      main .fa-solid {
+        color: #8d38ed;
+      }
+      main .fa-brands {
+        position: relative;
+        top: 22px;
+        left: 40px;
+        color: #8d38ed;
+        font-size: 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <script src="https://kit.fontawesome.com/9560fde36b.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    main .fa-solid {
-      color: #8d38ed;
-    }
-    main .fa-brands {
-      position: relative;
-      top: 22px;
-      left: 40px;
-      color: #8d38ed;
-      font-size: 20px;
-      margin: 5px;
-      cursor: pointer;
-    }
+      main label {
+        line-height: 2.3;
+        color: #000000;
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 600;
+      }
 
-    main label {
-      line-height: 2.3;
-      color: #000000;
-      font-family: "DM Sans";
-      font-size: 16px;
-      font-weight: 600;
-    }
+      main textarea {
+        font-size: 16px;
+        font-family: "DM Sans";
+      }
 
-    main textarea {
-      font-size: 16px;
-      font-family: "DM Sans";
-    }
+      main input,
+      textarea::placeholder {
+        font-family: "DM Sans";
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #02010100;
+      }
 
-    main input,
-    textarea::placeholder {
-      font-family: "DM Sans";
-      font-size: 16px;
-      font-weight: 400;
-      background-color: #02010100
-    }
+      main button {
+        color: #ffffff;
+        width: 170px;
+        height: 56px;
+        background-color: #8d38ed;
+        font-family: "Archivo";
+        font-size: 16px;
+        border: 0px solid #ffffff;
+        border-radius: 4px;
+        padding: 16px 32px;
+        cursor: pointer;
+      }
 
-    main button {
-      color: #ffffff;
-      width: 170px;
-      height: 56px;
-      background-color: #8d38ed;
-      font-family: "Archivo";
-      font-size: 16px;
-      border: 0px solid #ffffff;
-      border-radius: 4px;
-      padding: 16px 32px;
-      cursor: pointer;
-    }
+      main button:hover {
+        color: #ffffff;
+        background-color: #7e21e7;
+      }
+    </style>
+  </head>
 
-    main button:hover {
-      color: #ffffff;
-      background-color: #7e21e7;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- <header>
+  <body>
+    <!-- <header>
     <nav>
       <figure>
         <a href="index.html"><img src="../img/originlogo.png" class="logo" /></a>
@@ -85,244 +93,361 @@
     </nav>
   </header> -->
 
-  <!-- main section of the body -->
-  <main>
-    <!-- first section of the body -->
-    <div class="main-container">
-      <div class="main-1st-container">
-        <h1 class="main-h1">Contact</h1>
-        <p class="main-p">Lorem ipsum
-          dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-          eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-          parturient montes.</p>
-      </div>
-    </div>
-
-    <!-- second section of the body -->
-    <div class="main-second">
-
-      <!-- first part of the first section of the body -->
-      <div class="second-first">
-        <h1 class="second-h1">Let's talk about your next big
-          project</h1>
-        <p class="second-p">Lorem ipsum
-          dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-          eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-          parturient montes.</p>
-        <div class="detail">
-          <i class="fa-solid fa-location-dot" style="background-color:#edf0ef;
-              width:24px; height:24px; text-align:center;
-              font-weight:900;font-size:24px; padding:12px; border-radius:5px;"></i>
-          <div style="margin-left: 25px;">
-            <h3 style="font-family: 'Archivo', sans-serif; font-size:16px;">Office
-              Address</h3>
-            <p style="color:#587274; margin-top:9px; font-size:
-                14px;font-family: 'DM Sans', sans-serif;">Dilibazar, Kathmandu, Nepal</p>
-          </div>
-        </div>
-        <div class="detail">
-          <i class="fa-solid fa-phone" style="background-color:#edf0ef;
-              width:24px; height:24px; text-align:center;
-              font-weight:900;font-size:24px; padding:12px; border-radius:5px;"></i>
-          <div style="margin-left: 25px;">
-            <h3 style="font-family: 'Archivo', sans-serif; font-size:16px;">Phone Number</h3>
-            <p style="color:#587274; margin-top:9px; font-size:
-                14px;font-family: 'DM Sans', sans-serif;">+977 9800526407</p>
-          </div>
-        </div>
-        <div class="detail">
-          <i class="fa-solid fa-envelope" style="background-color:#edf0ef;
-              width:24px; height:24px; text-align:center;
-              font-weight:900;font-size:24px; padding:12px; border-radius:5px;"></i>
-          <div style="margin-left: 25px;">
-            <h3 style="font-family: 'Archivo', sans-serif; font-size:16px;">Email Address</h3>
-            <p style="color:#587274; margin-top:9px; font-size:
-                14px;font-family: 'DM Sans', sans-serif;">admin@theoriginteams.com</p>
-          </div>
-        </div>
-        <div class="extra">
-          <div style="width: 312px;">
-            <p style="line-height:25px;
-                color:#587274; font-size: 16px;font-family: 'DM Sans',
-                sans-serif;">For technical issues and general inquiries, Please
-              visit our <span style="color:#8d38ed">help center.</span></p>
-          </div>
-          <div>
-            <a href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
-              target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D" target="_blank"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- second part of the first section of body -->
-      <div class="form">
-        <div class="form-first">
-          <div style="display: flex;justify-content:space-between; margin-bottom:10px;">
-            <div style="display: inline-block; width:260px;">
-              <label>Name <span style="color: #8d38ed;">*</span></label><br>
-              <input class="name" type="text" placeholder="Your Name"/>
-            </div>
-            <div style="display: inline-block; width:260px;">
-              <label>Email <span style="color: #8d38ed;">*</span></label><br>
-              <input class="name" type="text" placeholder="Your Email"/>
-            </div>
-          </div>
-          <div style=" margin-bottom:10px;">
-            <label>Subject</label>
-            <input class="subject" type="text" placeholder="Your Subject"/>
-          </div>
-          <div style=" margin-bottom:30px;">
-            <label>Message</label><br>
-            <textarea cols="63" rows="7" placeholder="Your Message" style="resize: none;border: 1px solid #DADADA;
-            border-radius: 5px; padding:15px;"></textarea>
-          </div>
-          <button type="submit">Submit</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- map -->
-    <div class="map" style="background-color:#ffffff; height:550px; text-align:center;position:relative;">
-      <p><iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3118407469865!2d85.32304771516237!3d27.707656482791712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1678537839186!5m2!1sen!2snp"
-          width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-    </div>
-  </main>
-
-  <!-- footer section of the body -->
-  <footer>
-    <!-- first part of footer -->
-    <div style="
-        border-bottom: 0.5px solid rgb(115, 115, 115);
-        background-color: rgb(14 24 24);
-        height: 270px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ">
-      <div style="
-          border: 0;
-          border-radius: 5px;
-          background-color: #8d38ed;
-          width: 1240px;
-          height: 205px;
-          ">
-        <div style="
-            padding: 60px;
-            display: inline-block;
-            align-items: baseline;
-            width: 470px;
-            ">
-          <h1 style="
-              color: rgb(255, 255, 255);
-              font-size: 32px;
-              font-weight: 300;
-              font-family: 'Archivo', sans-serif;
-              position: relative;
-              bottom: 8px;
-              ">
-            Subscribe Our Newsletter
-          </h1>
-          <p style="
-              color: rgb(255, 254, 254);
-              margin-top: 15px;
-              font-size: 16px;
-              font-weight: 100;
-              font-family: 'DM Sans', sans-serif;
-              ">
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-            ullamcorper ultricies nisi. Nam eget dui.
+    <!-- main section of the body -->
+    <main>
+      <!-- first section of the body -->
+      <div class="main-container">
+        <div class="main-1st-container">
+          <h1 class="main-h1">Contact</h1>
+          <p class="main-p">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes.
           </p>
         </div>
-        <div style="
-            display: inline-block;
-            position: relative;
-            left: 90px;
-            bottom: 45px;
-            ">
-          <input type="text" placeholder="Enter your e-mail address..." style="
-              background-color: rgba(240, 248, 255, 0);
-              border: 1px solid #ffffff5c;
-              border-radius: 5px;
-              height: 30px;
-              width: 300px;
-              padding: 14px 16px;
-              " />
-          <button type="button" name="myButton">Get Started</button>
+      </div>
+
+      <!-- second section of the body -->
+      <div class="main-second">
+        <!-- first part of the first section of the body -->
+        <div class="second-first">
+          <h1 class="second-h1">Let's talk about your next big project</h1>
+          <p class="second-p">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes.
+          </p>
+          <div class="detail">
+            <i
+              class="fa-solid fa-location-dot"
+              style="
+                background-color: #edf0ef;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                font-weight: 900;
+                font-size: 24px;
+                padding: 12px;
+                border-radius: 5px;
+              "
+            ></i>
+            <div style="margin-left: 25px">
+              <h3 style="font-family: 'Archivo', sans-serif; font-size: 16px">
+                Office Address
+              </h3>
+              <p
+                style="
+                  color: #587274;
+                  margin-top: 9px;
+                  font-size: 14px;
+                  font-family: 'DM Sans', sans-serif;
+                "
+              >
+                Dilibazar, Kathmandu, Nepal
+              </p>
+            </div>
+          </div>
+          <div class="detail">
+            <i
+              class="fa-solid fa-phone"
+              style="
+                background-color: #edf0ef;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                font-weight: 900;
+                font-size: 24px;
+                padding: 12px;
+                border-radius: 5px;
+              "
+            ></i>
+            <div style="margin-left: 25px">
+              <h3 style="font-family: 'Archivo', sans-serif; font-size: 16px">
+                Phone Number
+              </h3>
+              <p
+                style="
+                  color: #587274;
+                  margin-top: 9px;
+                  font-size: 14px;
+                  font-family: 'DM Sans', sans-serif;
+                "
+              >
+                +977 9800526407
+              </p>
+            </div>
+          </div>
+          <div class="detail">
+            <i
+              class="fa-solid fa-envelope"
+              style="
+                background-color: #edf0ef;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                font-weight: 900;
+                font-size: 24px;
+                padding: 12px;
+                border-radius: 5px;
+              "
+            ></i>
+            <div style="margin-left: 25px">
+              <h3 style="font-family: 'Archivo', sans-serif; font-size: 16px">
+                Email Address
+              </h3>
+              <p
+                style="
+                  color: #587274;
+                  margin-top: 9px;
+                  font-size: 14px;
+                  font-family: 'DM Sans', sans-serif;
+                "
+              >
+                admin@theoriginteams.com
+              </p>
+            </div>
+          </div>
+          <div class="extra">
+            <div style="width: 312px">
+              <p
+                style="
+                  line-height: 25px;
+                  color: #587274;
+                  font-size: 16px;
+                  font-family: 'DM Sans', sans-serif;
+                "
+              >
+                For technical issues and general inquiries, Please visit our
+                <span style="color: #8d38ed">help center.</span>
+              </p>
+            </div>
+            <div>
+              <a
+                href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
+                target="_blank"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- second part of the first section of body -->
+        <div class="form">
+          <div class="form-first">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+              "
+            >
+              <div style="display: inline-block; width: 260px">
+                <label>Name <span style="color: #8d38ed">*</span></label
+                ><br />
+                <input class="name" type="text" placeholder="Your Name" />
+              </div>
+              <div style="display: inline-block; width: 260px">
+                <label>Email <span style="color: #8d38ed">*</span></label
+                ><br />
+                <input class="name" type="text" placeholder="Your Email" />
+              </div>
+            </div>
+            <div style="margin-bottom: 10px">
+              <label>Subject</label>
+              <input class="subject" type="text" placeholder="Your Subject" />
+            </div>
+            <div style="margin-bottom: 30px">
+              <label>Message</label><br />
+              <textarea
+                cols="63"
+                rows="7"
+                placeholder="Your Message"
+                style="
+                  resize: none;
+                  border: 1px solid #dadada;
+                  border-radius: 5px;
+                  padding: 15px;
+                "
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- second part of footer -->
-    <div style="
-        display: flex;
-        justify-content: space-evenly;
-        border-bottom: 0.5px solid rgb(115, 115, 115);
-        background-color: rgb(14 24 24);
-        height: 300px;
-        padding: 30px 40px;
-        ">
-      <div style="width: 400px;position:relative;">
-        <img src="../img/originlogo.png" style="height: auto; width: 200px">
-        <p style="color: #ffffffc4;line-height:30px; position: relative;
-            font-family: 'DM Sans', sans-serif; font-size:16px;
-            margin-top:20px;">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis
-          nemo deserunt. Nemo quis quisquam deleniti veritatis, voluptates
-          voluptatum vitae!
+      <!-- map -->
+      <div
+        class="map"
+        style="
+          background-color: #ffffff;
+          height: 550px;
+          text-align: center;
+          position: relative;
+        "
+      >
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3118407469865!2d85.32304771516237!3d27.707656482791712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1908434cb3c5%3A0x1fdf1a6d41d2512d!2sIslington%20College!5e0!3m2!1sen!2snp!4v1678537839186!5m2!1sen!2snp"
+            width="80%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </p>
-        <a href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL" target="_blank"><i
-            class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D" target="_blank"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
       </div>
-      <div style="position: relative; top:30px;">
-        <h3>Navigation</h3>
-        <ol>
-          <li class="aa"><a href="#">Home</a></li>
-          <li class="aa"><a href="#">Services</a></li>
-          <li class="aa"><a href="#">Contact</a></li>
-          <li class="aa"><a href="#">About</a></li>
-        </ol>
-      </div>
-      <div style="position: relative; top:30px;">
-        <h3>Contacts</h3>
-        <div style="width: 200px; display: flex;flex-direction:column;
-            margin-top:20px;">
-          <i class="fa-solid fa-square-phone"></i>
-          <div style="margin-left: 10px;position:relative;left:50px;
-              bottom:40px">
-            <h4 style="color: white; font-family: 'DM Sans', sans-serif;
-                font-size:14px;">Phone</h4>
-            <p style="color: white; margin-top:5px; font-family: 'DM Sans',
-                sans-serif; font-size:16px;">+977 9800526407</p>
+    </main>
+
+    <!-- footer section of the body -->
+    <footer>
+      <!-- first part of footer -->
+      <div class="first-footer">
+        <div class="first-container-footer">
+          <div class="subscribe-section">
+            <h1>
+              Subscribe Our Newsletter
+            </h1>
+            <p>
+              Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+              ullamcorper ultricies nisi. Nam eget dui.
+            </p>
           </div>
-          <i class="fa-solid fa-square-envelope"></i>
-          <div style="margin-left: 10px;position:relative;left:50px;
-              bottom:40px">
-            <h4 style="color: white; font-family: 'DM Sans', sans-serif;
-                font-size:14px;">Email</h4>
-            <p style="color: white; margin-top:5px; font-family: 'DM Sans',
-                sans-serif; font-size:16px;">admin@theoriginteams.com</p>
+          <div class="placeholder_btn">
+            <input
+              type="text"
+              placeholder="Enter your e-mail address..."
+            />
+            <button type="button" name="myButton">Get Started</button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- third part of footer -->
-    <div style="background-color: rgb(14 24 24);height:40px;border-bottom:
-        0.5px solid rgb(115, 115, 115);">
-      <p style="color: white; font-family: 'DM Sans', sans-serif;
-          font-size:14px; text-align:center;padding-top:10px;
-          word-spacing:2px;">© 2023 · The Origin Teams
-      </p>
-    </div>
-  </footer>
-</body>
+      <!-- second part of footer -->
+      <div class="contain">
+        <div style="width: 400px; position: relative" class="inner-contain">
+          <img src="../img/originlogo.png" style="height: auto; width: 200px" />
+          <p
+            style="
+              color: #ffffffc4;
+              line-height: 30px;
+              position: relative;
+              font-family: 'DM Sans', sans-serif;
+              font-size: 16px;
+              margin-top: 20px;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis
+            nemo deserunt. Nemo quis quisquam deleniti veritatis, voluptates
+            voluptatum vitae!
+          </p>
+          <a
+            href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div style="position: relative; top: 30px" class="one">
+          <h3>Navigation</h3>
+          <ol>
+            <li class="aa"><a href="#">Home</a></li>
+            <li class="aa"><a href="#">Services</a></li>
+            <li class="aa"><a href="#">Contact</a></li>
+            <li class="aa"><a href="#">About</a></li>
+          </ol>
+        </div>
+        <div style="position: relative; top: 30px" class="one">
+          <h3>Contacts</h3>
+          <div
+            style="
+              width: 200px;
+              display: flex;
+              flex-direction: column;
+              margin-top: 20px;
+            "
+          >
+            <i class="fa-solid fa-square-phone"></i>
+            <div
+              style="
+                margin-left: 10px;
+                position: relative;
+                left: 50px;
+                bottom: 40px;
+              "
+            >
+              <h4
+                style="
+                  color: white;
+                  font-family: 'DM Sans', sans-serif;
+                  font-size: 14px;
+                "
+              >
+                Phone
+              </h4>
+              <p
+                style="
+                  color: white;
+                  margin-top: 5px;
+                  font-family: 'DM Sans', sans-serif;
+                  font-size: 16px;
+                "
+              >
+                +977 9800526407
+              </p>
+            </div>
+            <i class="fa-solid fa-square-envelope"></i>
+            <div
+              style="
+                margin-left: 10px;
+                position: relative;
+                left: 50px;
+                bottom: 40px;
+              "
+            >
+              <h4
+                style="
+                  color: white;
+                  font-family: 'DM Sans', sans-serif;
+                  font-size: 14px;
+                "
+              >
+                Email
+              </h4>
+              <p
+                style="
+                  color: white;
+                  margin-top: 5px;
+                  font-family: 'DM Sans', sans-serif;
+                  font-size: 16px;
+                "
+              >
+                admin@theoriginteams.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- third part of footer -->
+      <div class="footer-third-part">
+        <p>
+          © 2023 · The Origin Teams
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
