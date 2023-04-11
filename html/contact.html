@@ -20,15 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/style.css" />
     <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
-
-      body {
-        background-color: #f4f4f4;
-      }
       main .fa-solid {
         color: #8d38ed;
       }
@@ -80,123 +73,34 @@
         color: #ffffff;
         background-color: #7e21e7;
       }
-      footer button {
-        margin-left: 20px;
-        position: relative;
-        color: #000000;
-        height: 57px;
-        background-color: #ffffff;
-        font-size: 16px;
-        border: 0px solid #ffffff;
-        border-radius: 5px;
-        padding: 13px 28px;
-        cursor: pointer;
-      }
-      footer button:hover {
-        color: #000000;
-        background-color: #eee7e7;
-      }
-      .fa-brands {
-        color: #8d38ed;
-        position: relative;
-        top: 15px;
-        font-size: 25px;
-        margin: 10px;
-        cursor: pointer;
-      }
-      footer ol li a {
-        text-decoration: none;
-      }
-      footer input::placeholder {
-        color: #fffffff1;
-        font-family: "DM Sans", sans-serif;
-        font-size: 16px;
-
-        padding: 14px 16px;
-      }
-      footer h3 {
-        color: #ffffff;
-        margin-bottom: 30px;
-        font-family: "Archivo", sans-serif;
-        font-size: 18px;
-      }
-      footer ol li a {
-        color: #ffffffc4;
-      }
-      footer .aa {
-        margin-top: 20px;
-        font-family: "DM Sans", sans-serif;
-        font-size: 16px;
-      }
-      footer .fa-solid {
-        font-size: 40px;
-        color: #ffffff;
-      }
     </style>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a href="#"><img class="mt-2 ms-5 logo" src="../img/originlogo.png" style="height:auto; max-width:125px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">Contact</a>
-                    </li>
-                </ul>
-                <button class="" type="submit">Get Started</button>
-            </div>
-        </div>
+    <!-- <header>
+    <nav>
+      <figure>
+        <a href="index.html"><img src="../img/originlogo.png" class="logo" /></a>
+      </figure>
+      <div class="lists">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" class="active">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <button type="button" name="myButton">Get Started</button>
     </nav>
-    </header>
+  </header> -->
 
     <!-- main section of the body -->
     <main>
       <!-- first section of the body -->
-      <div style="height: 400px; display: flex; justify-content: center">
-        <div
-          style="
-            width: 490px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <h1
-            style="
-              font-family: 'Archivo', sans-serif;
-              font-size: 52px;
-              color: #0d1d20;
-            "
-          >
-            Contact
-          </h1>
-          <p
-            style="
-              font-family: 'DM Sans', sans-serif;
-              font-size: 16px;
-              color: #586274;
-              text-align: center;
-              margin-top: 30px;
-            "
-          >
+      <div class="main-container">
+        <div class="main-1st-container">
+          <h1 class="main-h1">Contact</h1>
+          <p class="main-p">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes.
@@ -205,54 +109,16 @@
       </div>
 
       <!-- second section of the body -->
-      <div
-        style="
-          background-color: #ffffff;
-          height: 900px;
-          width: 100%;
-          overflow: hidden;
-          display: flex;
-          justify-content: space-between;
-        "
-      >
+      <div class="main-second">
         <!-- first part of the first section of the body -->
-        <div
-          style="
-            position: relative;
-            left: 7%;
-            top: 15%;
-            width: 510px;
-            height: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            display: inline-block;
-          "
-        >
-          <h1
-            style="
-              margin-bottom: 25px;
-              font-family: 'Archivo', sans-serif;
-              font-size: 48px;
-              font-weight: 600;
-            "
-          >
-            Let's talk about your next big project
-          </h1>
-          <p
-            style="
-              margin-bottom: 35px;
-              line-height: 25px;
-              color: #587274;
-              font-size: 16px;
-              font-family: 'DM Sans', sans-serif;
-            "
-          >
+        <div class="second-first">
+          <h1 class="second-h1">Let's talk about your next big project</h1>
+          <p class="second-p">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
             commodo ligula eget dolor. Aenean massa. Cum sociis natoque
             penatibus et magnis dis parturient montes.
           </p>
-          <div style="display: flex; margin-bottom: 20px">
+          <div class="detail">
             <i
               class="fa-solid fa-location-dot"
               style="
@@ -282,7 +148,7 @@
               </p>
             </div>
           </div>
-          <div style="display: flex; margin-bottom: 20px">
+          <div class="detail">
             <i
               class="fa-solid fa-phone"
               style="
@@ -312,7 +178,7 @@
               </p>
             </div>
           </div>
-          <div style="display: flex; margin-bottom: 20px">
+          <div class="detail">
             <i
               class="fa-solid fa-envelope"
               style="
@@ -342,17 +208,7 @@
               </p>
             </div>
           </div>
-          <div
-            style="
-              margin-top: 25px;
-              display: flex;
-              width: 450px;
-              height: 52px;
-              border: 1px solid #d5d5d7;
-              border-radius: 5px;
-              padding: 20px;
-            "
-          >
+          <div class="extra">
             <div style="width: 312px">
               <p
                 style="
@@ -385,28 +241,8 @@
         </div>
 
         <!-- second part of the first section of body -->
-        <div
-          style="
-            position: relative;
-            top: 13%;
-            right: 6%;
-            border: 1px solid #d5d5d7;
-            border-radius: 5px;
-            background-color: #fcfcfc;
-            width: 645px;
-            height: 580px;
-          "
-        >
-          <div
-            style="
-              padding: 45px;
-              width: 550px;
-              height: 480px;
-              display: flex;
-              flex-direction: column;
-              justify-content: space-evenly;
-            "
-          >
+        <div class="form">
+          <div class="form-first">
             <div
               style="
                 display: flex;
@@ -417,50 +253,17 @@
               <div style="display: inline-block; width: 260px">
                 <label>Name <span style="color: #8d38ed">*</span></label
                 ><br />
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  style="
-                    background-color: rgba(240, 248, 255, 0);
-                    border: 1px solid #dadada;
-                    border-radius: 5px;
-                    height: 25px;
-                    width: 234px;
-                    padding: 12px;
-                  "
-                />
+                <input class="name" type="text" placeholder="Your Name" />
               </div>
               <div style="display: inline-block; width: 260px">
                 <label>Email <span style="color: #8d38ed">*</span></label
                 ><br />
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  style="
-                    background-color: rgba(240, 248, 255, 0);
-                    border: 1px solid #dadada;
-                    border-radius: 5px;
-                    height: 25px;
-                    width: 234px;
-                    padding: 12px;
-                  "
-                />
+                <input class="name" type="text" placeholder="Your Email" />
               </div>
             </div>
             <div style="margin-bottom: 10px">
               <label>Subject</label>
-              <input
-                type="text"
-                placeholder="Your Subject"
-                style="
-                  background-color: rgba(240, 248, 255, 0);
-                  border: 1px solid #dadada;
-                  border-radius: 5px;
-                  height: 25px;
-                  width: 96%;
-                  padding: 12px;
-                "
-              />
+              <input class="subject" type="text" placeholder="Your Subject" />
             </div>
             <div style="margin-bottom: 30px">
               <label>Message</label><br />
@@ -483,6 +286,7 @@
 
       <!-- map -->
       <div
+        class="map"
         style="
           background-color: #ffffff;
           height: 550px;
@@ -506,93 +310,31 @@
 
     <!-- footer section of the body -->
     <footer>
-      <div
-        style="
-          border-bottom: 0.5px solid rgb(115, 115, 115);
-          background-color: rgb(14 24 24);
-          height: 270px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        "
-      >
-        <div
-          style="
-            border: 0;
-            border-radius: 5px;
-            background-color: #8d38ed;
-            width: 1240px;
-            height: 205px;
-          "
-        >
-          <div
-            style="
-              padding: 60px;
-              display: inline-block;
-              align-items: baseline;
-              width: 470px;
-            "
-          >
-            <h1
-              style="
-                color: rgb(255, 255, 255);
-                font-size: 32px;
-                font-weight: 300;
-                font-family: 'Archivo', sans-serif;
-                position: relative;
-                bottom: 8px;
-              "
-            >
+      <!-- first part of footer -->
+      <div class="first-footer">
+        <div class="first-container-footer">
+          <div class="subscribe-section">
+            <h1>
               Subscribe Our Newsletter
             </h1>
-            <p
-              style="
-                color: rgb(255, 254, 254);
-                margin-top: 15px;
-                font-size: 16px;
-                font-weight: 100;
-                font-family: 'DM Sans', sans-serif;
-              "
-            >
+            <p>
               Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
               ullamcorper ultricies nisi. Nam eget dui.
             </p>
           </div>
-          <div
-            style="
-              display: inline-block;
-              position: relative;
-              left: 90px;
-              bottom: 45px;
-            "
-          >
+          <div class="placeholder_btn">
             <input
               type="text"
               placeholder="Enter your e-mail address..."
-              style="
-                background-color: rgba(240, 248, 255, 0);
-                border: 1px solid #ffffff5c;
-                border-radius: 5px;
-                height: 30px;
-                width: 300px;
-                padding: 14px 16px;
-              "
             />
             <button type="button" name="myButton">Get Started</button>
           </div>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          justify-content: space-evenly;
-          border-bottom: 0.5px solid rgb(115, 115, 115);
-          background-color: rgb(14 24 24);
-          height: 300px;
-          padding: 30px 40px;
-        "
-      >
-        <div style="width: 400px; position: relative">
+
+      <!-- second part of footer -->
+      <div class="contain">
+        <div style="width: 400px; position: relative" class="inner-contain">
           <img src="../img/originlogo.png" style="height: auto; width: 200px" />
           <p
             style="
@@ -608,11 +350,19 @@
             nemo deserunt. Nemo quis quisquam deleniti veritatis, voluptates
             voluptatum vitae!
           </p>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <a
+            href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
+            target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-        <div style="position: relative; top: 30px">
+        <div style="position: relative; top: 30px" class="one">
           <h3>Navigation</h3>
           <ol>
             <li class="aa"><a href="#">Home</a></li>
@@ -621,7 +371,7 @@
             <li class="aa"><a href="#">About</a></li>
           </ol>
         </div>
-        <div style="position: relative; top: 30px">
+        <div style="position: relative; top: 30px" class="one">
           <h3>Contacts</h3>
           <div
             style="
@@ -657,7 +407,7 @@
                   font-size: 16px;
                 "
               >
-                123456789
+                +977 9800526407
               </p>
             </div>
             <i class="fa-solid fa-square-envelope"></i>
@@ -686,29 +436,16 @@
                   font-size: 16px;
                 "
               >
-                123456789
+                admin@theoriginteams.com
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div
-        style="
-          background-color: rgb(14 24 24);
-          height: 40px;
-          border-bottom: 0.5px solid rgb(115, 115, 115);
-        "
-      >
-        <p
-          style="
-            color: white;
-            font-family: 'DM Sans', sans-serif;
-            font-size: 14px;
-            text-align: center;
-            padding-top: 10px;
-            word-spacing: 2px;
-          "
-        >
+
+      <!-- third part of footer -->
+      <div class="footer-third-part">
+        <p>
           © 2023 · The Origin Teams
         </p>
       </div>

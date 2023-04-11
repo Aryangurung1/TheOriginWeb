@@ -22,6 +22,7 @@
       justify-content: center;
       align-items: center;
       height: 400px;
+      width: 100%;
       background-color: rgba(223, 223, 223, 0.452);
     }
 
@@ -58,31 +59,41 @@
       border: 1px solid black;
     }
     .container8{
-      width: 20%;
+      width: 45%;
       border: 1px solid black;
-      height: 63%;
-      margin: 15px;
-      margin-top: px;
+      height: 65%;
+      margin: 10px;
     }
     .container8-big{
-      width: 25%;
+      width: 48%;
       border: 1px solid black;
       height: 80%;
-      margin-top: px;
+      margin-top: 17px;
+      padding-right:30px ;
+  
 
     }
     .container9{
       width: 62%;
+      height: 6%;
       display: flex;
       border: 1px solid black; 
-      margin-left: 29%;
       position: relative;
-      bottom: 120px;
+      left: 8%;
+      bottom: 9%;
+    }
+    .container9-responsive{
+      height: 20%;
+      margin-left: 20%;
+      position: relative;
+      bottom: 15%;
+      width: 100%;
     }
 
 
     .sub-container {
       border: 1px solid red;
+      margin-top: 2%;
       height: 300px;
       width: 40%;
       display: flex;
@@ -94,7 +105,7 @@
       border: 1px solid black;
       display: flex;
       justify-content: space-between;
-      margin-top: 30px;
+      margin-top: 1%;
     }
 
     .sub-container3 {
@@ -105,10 +116,16 @@
       border: 1px solid black;
        width: 100%
     }
+    .sub-container4{
+      display: flex;
+      width: 49%;
+      border: 1px solid black;
+      
+    }
 
     .heading {
       font-family: "Archivo", sans-serif;
-      font-size: 2.7rem;
+      font-size: 27px;
       font-weight: 600;
       text-align: center;
       padding-left: 10px;
@@ -138,12 +155,10 @@
       
     .sub-heading6{
       font-size: 18px;
-      margin: 0; 
       font-family: 'Archivo', sans-serif;
       font-weight: 600;
-      width: 70%;
       color: rgb(75, 74, 74);
-      text-align: justify;
+      text-align: left;
     }
     .sub-heading7{
       text-align: justify;
@@ -185,10 +200,20 @@
       font-size: 16px;
       font-weight: 100;
       font-family: "DM Sans", sans-serif;
+      padding-right: 20px; 
+      line-height: 1.5;
+      color: rgb(103, 101, 101);
+      width: 90%;
+    }
+    .sub-paragraph7-right{
+      font-size: 16px;
+      font-weight: 100;
+      font-family: "DM Sans", sans-serif;
       padding-right: 10px; 
       line-height: 1.5;
       color: rgb(103, 101, 101);
       width: 90%;
+      margin-right: 12%;
     }
     .sub-paragraph8{
       font-size: 16px;
@@ -210,8 +235,9 @@
       width: 85%;
       margin: 10px auto;
       padding: 20px;
+      align-self: center;
       display: flex;
-      flex-wrap: wrap;
+      flex-flow: wrap;
       justify-content: space-between;
       
 
@@ -235,10 +261,16 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-top: 300px;
-      height: 100px;
+      margin-top: 10%;
+      height: auto;
       
 
+    }
+    .main-container4{
+      width: 80%;
+      position: relative;
+      left: 28%;
+      bottom: 12%;
     }
 
     .icon-container i {
@@ -279,27 +311,43 @@
       justify-content: center;
       align-items: center;
     }
+    .check-mark-left{
+      margin-left: 10%;
+      font-size: 20px;
+      height: 25px;
+      width: 25px;
+      color: #8d38ed;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .check-mark-left2{
+      margin-left: 15%;
+      font-size: 20px;
+      height: 25px;
+      width: 25px;
+      color: #8d38ed;
+      border: 1px solid red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   
     .button{
       color: #ffffff;
       height: 50px;
       background-color: #8d38ed;
-      font-size: 16px;
+      font-size: 10px;
       border: 0px solid #ffffff;
       border-radius: 5px;
-      padding: 13px 28px;
       cursor: pointer;
       border: 1px solid black;
+      width: 120px;
     }
-    .back{
-      background-color: white;
-      width: 100%;
-      height: 87%;
-      position: relative;
-      bottom: 94%;
-      z-index: -1;
-      border-radius: 5px;
+    .button-container{
+      margin-left: 90%;
     }
     .portfolio{
       width: 100%;
@@ -308,19 +356,41 @@
     }
     .groupPhoto{
       margin-top: 60px;
-      margin-left: 190px;
+      margin-left: 40%;
       width: 90%; 
       height: 220%;
       border-radius: 5px; 
       transform: translateX(-600px);
       transition: all 1s;
     }
+
+    .back{         /* for team details background*/
+      background-color: white;
+      width: 100%;
+      height: 87%;
+      position: relative;
+      bottom: 94%;
+      z-index: -1;
+      border-radius: 5px;
+    }
+
+    .Rback{        /* for younng girl background*/
+      background-color: #8d38ed;
+      width: 100%;
+      height: 87%;
+      position: relative;
+      bottom: 90%;
+      z-index: -1;
+      border-radius: 5px; 
+
+    }
+
     .purpleBackground{
       background-color: #8d38ed;
       width: 80%;
-      height: 130%;
+      height: 115%;
       position: relative;
-      bottom: 160px;
+      bottom: 40%;
       left: 50px;
       z-index: -1;
       border-radius: 5px;
@@ -328,11 +398,13 @@
       transition: all 1s;
     }
 
+
+
     .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .back{
       background-color: #8d38ed;
-      transition: 0.5s;
+      transition: 1s;
       position: relative;
-      bottom: 100%;
+      bottom: 93%;
     }
 
     .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .portfolio{
@@ -342,14 +414,14 @@
       width: 104%;
       position: relative;
       right: 20px;
-      bottom: 40px;
+      bottom: 20px;
     }
 
     .main-container:hover .sub-container3:hover .container8:hover .image2:hover .back{
       background-color: #8d38ed;
       transition: 0.5s;
       position: relative;
-      bottom: 103%;
+      bottom: 105%;
     }
     .main-container:hover .sub-container3:hover .container8:hover .image2:hover .portfolio{
       transition-duration:0.7s;
@@ -358,7 +430,7 @@
       width: 110%;
       position: relative;
       right: 20px;
-      bottom: 31px;
+      bottom: 50px;
     }
   
     .SlideIn{
@@ -421,6 +493,201 @@
       display: flex;
       justify-content: center;
     }
+    @media(max-width: 1200px){
+      .container5{
+        width: 100%;
+      }
+      .container7{
+        width: 90%;
+      }
+      .container2{
+        width: 90%;
+      }
+      .container3{
+        position: relative;
+        top: 20%;
+        width: 300px;
+        margin-left: 10%;
+
+      }
+      .main-container{
+        height: auto;
+      }
+      .sub-paragraph{
+        font-size: 20px;
+      }
+      .sub-paragraph6{
+        margin-top: 2%;
+      }
+      .sub-paragraph8{
+        font-size:13px;
+        width: 60%;
+        margin-top: 2%
+      }
+      .button{
+        font-size: 10px;
+        margin-top: 1%;
+        margin-right: 20%;
+      }
+      .sub-container4{
+        width: 100%;
+        align-content: space-between;
+      }
+      
+      .container8-big{
+        width: 45%;
+        border: 1px solid black;
+        height: 75%;
+        margin: 10px;
+      }
+      .container8{
+        width: 45%;
+        height: 75%;
+      }
+      .container9-responsive{
+        width: 70%;
+        margin-right: 90%;
+        bottom: 2%;
+        width: 40%;
+
+      }
+      .container9-responsive .check-mark{
+        width: 10%;
+
+      }
+      .container3{
+        width: 90%;
+        margin: 0;
+      }
+      .container9{
+        width: 190%;
+      }
+
+      .check-mark-left{
+        margin-left: 23%;
+      }
+      .check-mark-left2{
+        margin-left: 26%;
+      }
+      
+    }
+
+    @media(max-width:812px){
+      .check-mark-left{
+        margin-left: 16%;
+      }
+      .check-mark-left2{
+        margin-left: 20%;
+      }
+      
+
+    }
+    
+    @media(max-width: 500px){
+      .heading{
+        font-size: 20px;
+      }
+      .responsive1 .heading{
+        font-size: 20px;
+      }
+      .paragraph{
+        font-size: 12px;
+      }
+      .heading2{
+        font-size: 25px
+      }
+      .heading3{
+        font-size: 24px;
+      }
+      .sub-heading6{
+        font-size: 12px;
+      }
+      .container9-responsive .sub-paragraph6{
+        font-size: 10px;
+        margin-right: 10;
+        margin-top: 26%;
+      }
+      .sub-heading7{
+        font-size: 15px;
+      }
+      .sub-paragraph{
+        font-size: 10px;
+      }
+      .sub-paragraph6{
+        font-size: 13px;
+        width: 120%;
+      }
+      .sub-paragraph7{
+        font-size: 13px;
+      }
+      .sub-paragraph8{
+        font-size:13px;
+        width: 50%;
+      }
+      .sub-paragraph7-right{
+        font-size: 13px;
+        margin-left: 16%;
+      }
+      
+
+      .sub-container{
+        width: 90%;
+      }
+      .sub-container4{
+        width: 100%;
+      }
+      .button{
+        margin-right: 40%;
+        width: 90px;
+      }
+      .main-container2 .container5{
+        width: 110%;
+      }
+      .main-container2 .container6{
+        width: 110%;
+      }
+      .container9-responsive{
+        width: 70%;
+        margin-right: 90%;
+        bottom: 5%;
+        width: 40%;
+
+      }
+      .container9-responsive .check-mark{
+        width: 10px;
+      }
+      .container3{
+        width: 90%;
+      }
+      .container9{
+        margin-top: 20%;
+        width: 170%;
+      }
+      .check-mark-left2{
+        margin-left: 20%;
+      }
+      .sub-container3 .sub-paragraph6{
+        font-size: 10px;
+      }
+    }
+    @media(max-width: 395px){
+      .sub-container3 .sub-paragraph6{
+        font-size: 7px;
+      }
+      .sub-heading7{
+        font-size: 10px;
+      }
+      .person-icon{
+        font-size: 10px;
+        position: relative;
+        bottom: 6px;
+      }
+      .insta-icon{
+        font-size: 10px;
+        position: relative;
+        bottom: 6px;
+      }
+    }
 
     @media(max-width: 900px){
       .response-heading .lists ,
@@ -445,135 +712,7 @@
       }
 
     }
-    @media(max-width: 902px){
-      .main-container .container2{
-        width: 100%;
-        display: block;
-      }
-      .main-container .container2 .responsive1 .heading{
-        font-size: 240%;
-        text-align: none;
-      }
-      .main-container .container3{
-        width: 50%;
-        height: 50%;
-        display: none;
-      }
-
-      .main-container .container7  {
-        width: 100%;
-      }
-      .main-container2 .container7 div .image2 .groupPhoto{
-        position: relative;
-        right: 190%;
-        top: 80px;
-        width: 120%;
-        height: 500%;
-      }
-      .main-container2 .container5 {
-        width: 150%;
-      }
-      .main-container2 .container5 .response-heading2 .heading2{
-        font-size: 60px;
-        width: 100%;
-      } 
-      .main-container2 .container6 div .sub-heading6{
-        font-size: 10px;
-        width: 200%;
-      }
-      .main-container2 .container6 div .sub-paragraph7{
-        font-size: 15px;
-        width: 100%;
-        margin-right: 40px;
-      }
-
-      .main-container2 .container7{
-        width: 50%;
-      }
-
-      .main-container2 .container7 .image2 .purpleBackground{
-        width: 90%;
-        position: relative;
-        bottom: 200px;
-
-        
-      }
-      .main-container2 .container7 .image2 div .groupPhoto{
-        width: 250%;
-        height: 300%;
-        bottom: 50px;
-      }
-      .main-container3 .heading3{
-        font-size: 37px;
-      }
-      .main-container3 .sub-paragraph8{
-        font-size: 15px;
-        width: 50%;
-      }
-      .main-container3 .button{
-        font-size: 10px;
-        width: 24%;
-        right: 30px;
-      }
-      .main-container .sub-container3 div .container8-big{
-        flex-grow: 47%;
-        width: 47%;
-      }
-      .main-container .sub-container3 div .container8{
-       width: 47%;
-      }
-      .main-container .container9{
-        position: relative;
-        margin-top: 60%;
-        bottom: 60%;
-        right: 120px;   
-      }
-
-    }
-
-    @media(max-width:1200px){
-      .main-container2 .container7 .image2 div .groupPhoto{
-        position: relative;
-        right: 90px;
-        width: 100%;
-        height: 190%;
-       
-      }
-      .main-container2 .container7 .image2 .purpleBackground{
-        height: 120%;
-        position: relative;
-        bottom: 160px;
-        left: 40px;
-        
-      }
-      .main-container2 .container5 .response-heading2 .heading2{
-        font-size: 30px;
-        width: 100%;
-      } 
-      .main-container2 .container5 .response-subparagraph2 .sub-paragraph6{
-        font-size: 14px;
-      } 
-      .main-container2 .container6 div .sub-heading6{
-        font-size:18px;
-      }
-      .main-container2 .container6 div .sub-paragraph7{
-        font-size: 15px;
-        width: 100%;
-        margin-right: 40px;
-      }
-      .main-container3 .sub-container3  .container8-big{
-        width: 40%;
-        height: 93%;
-        margin: 15px;
-      }
-      .main-container3 .sub-container3  .container8{
-       width: 40%;
-      }
-      .main-container .container9{
-        position: relative;
-        bottom: 60px;   
-      }
-    }
+   
     
   </style>
 </head>
@@ -651,31 +790,23 @@
       <div class="container3">
         <div class="image">
           <img src="../img/young-girl.png" alt="younggirl" style="width: 100%; height: 100%" />
-          <div class="Rback" style="
-                background-color: #8d38ed;
-                width: 100%;
-                height: 87%;
-                position: relative;
-                bottom: 631px;
-                z-index: -1;
-                border-radius: 5px;
-              "></div>
+          <div class="Rback">
+          </div>
         </div>
       </div>
     </section>
-    <section class="main-container2" style="margin-top: 500px;">
+    <section class="main-container2" style="margin-top: 40%;">
       <div class="container7">
         <div class="image2">
-          <div style="width: 70%; height: 45%;">
+          <div style="width: 70%; height: 42%;">
             <img class="groupPhoto" src="/img/group-photo-edited.jpg" alt="people" />
           </div>
-          <div class="purpleBackground">
-                
+          <div class="purpleBackground">  
           </div>
         </div>
       </div>
       <div class="container5" style="margin-right: 20px;height: 100%;" >
-        <div class="response-heading2" style="width: 80%;">
+        <div class="response-heading2" style="width: 100%;">
           <h2 class="heading2">
             Increase productivity <br> with our technology
           </h2>
@@ -690,15 +821,15 @@
         <diV class="container6">
           <div style="display: flex; margin-top: 20px;">
             <div class="check-mark">
-              <i class="fa-solid fa-circle-check"></i>
+              <i class="fa-solid fa-circle-check" ></i>
             </div> 
             <p class="sub-heading6" >
               Lightweight Product
             </p>
-            <div class="check-mark" >
-              <i class="fa-solid fa-circle-check"></i>
+            <div class="check-mark-left">
+              <i class="fa-solid fa-circle-check" ></i>
             </div>
-            <p class="sub-heading6">
+            <p class="sub-heading6" >
               Up - to - date Technology
             </p>
           </div>
@@ -706,7 +837,7 @@
             <p class="sub-paragraph7"  >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
-            <p class="sub-paragraph7" style=" margin-right: 12%;">
+            <p class="sub-paragraph7-right">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
@@ -717,7 +848,7 @@
             <p class="sub-heading6">
               Powered with AI
             </p>
-            <div class="check-mark">
+            <div class="check-mark-left2">
               <i class="fa-solid fa-circle-check"></i>
              </div>
             <p class="sub-heading6">
@@ -728,7 +859,7 @@
             <p class="sub-paragraph7" >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
-            <p class="sub-paragraph7" style="margin-right: 12% ;">
+            <p class="sub-paragraph7-right">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
           </div>
@@ -742,18 +873,21 @@
         <p class="sub-paragraph8" >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. alegdfne kdjsfiehf dhsjehfc
         </p>
-        <button type="button" name="myButton" class="button" style="
-              position: relative;
-              bottom: 55px;
-              margin-left: 85%;
-              font-family: Archivo, Sans-serif;">
-            
-          Meet Our Team
-        </button>
+        <div class="button-container" style="width: 20px;">
+          <button type="button" name="myButton" class="button" style="
+                position: relative;
+                bottom: 55px;
+                margin-left: 85%;
+                font-family: Archivo, Sans-serif;">
+              
+            Meet Our Team
+          </button>
+        </div>
       </div>
     </section>
     <section class="main-container"  >
       <div class="sub-container3">
+        <div class="sub-container4">
         <div class="container8-big">
           <div class="image2">
             <img class="portfolio" src="../img/young-girl.png" alt="younggirl"/>
@@ -762,11 +896,15 @@
             </div>   
           </div>
           <div style="display: flex; size: 20px;">
-            <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 26px; padding-right: 8px; color: #8d38ed;"></i>
+            <div class="person-icon">
+              <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 26px; padding-right: 8px; color: #8d38ed;"></i>
+            </div>
             <p class="sub-heading7" style="margin-top: 8px;">Novel Koirala</p>
           </div>
           <div style="display: flex;">
-            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 13px;"></i>
+            <div class="insta-icon">
+              <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 13px;"></i>
+            </div>
             <p class="sub-paragraph6">@Gaida</p>
           </div>
         </div>
@@ -778,14 +916,20 @@
             </div>
           </div>
           <div style="display: flex;">
-            <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            <div class="person-icon">
+              <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            </div>
             <p class="sub-heading7">Aryan manche</p>
           </div>
           <div style="display: flex;">
-            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            <div class="insta-icon">
+              <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            </div>
             <p class="sub-paragraph6">@realMancha_NotRobot123</p>
           </div>
         </div> 
+        </div>
+        <div class="sub-container4">
         <div class="container8">
           <div class="image2">
             <img class="portfolio" src="../img/young-girl.png" alt="younggirl"/>
@@ -794,12 +938,16 @@
             </div> 
           </div>
           <div style="display: flex;">
-            <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            <div class="person-icon">
+              <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            </div>
             <p class="sub-heading7">Anuvab Dhakal</p>
           </div>
           <div style="display: flex;">
-            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
-            <p class="sub-paragraph6">@imInLoveWithACriminal</p>
+            <div class="insta-icon">
+              <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            </div>
+            <p class="sub-paragraph6">@imInLove</p>
           </div>
         </div>
         <div class="container8">
@@ -810,43 +958,49 @@
             </div>
           </div>
           <div style="display: flex;">
-            <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            <div class="person-icon">
+              <i class="fa-solid fa-circle-user fa-xl" style="margin-top: 20px; padding-right: 8px; color: #8d38ed;"></i>
+            </div>
             <p class="sub-heading7">Koi milgaya</p>
           </div>
           <div style="display: flex;">
-            <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            <div class="insta-icon">
+              <i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; color: #8d38ed; padding-right: 11px;"></i>
+            </div>
             <p class="sub-paragraph6">@JAAAADUUUUUUUU</p>
           </div>
         </div>
-      </div>
-      <div class="container9">
-        <div class="container3" style="display: flex;">
-          <div class="check-mark">
-            <i class="fa-solid fa-circle-check"></i>
-          </div> 
-          <p class="sub-heading6">Expert Developer Team</p>
         </div>
-        <div class="container3" style="margin-left: 100px; display: flex;">
-          <div class="check-mark">
-            <i class="fa-solid fa-circle-check"></i>
-          </div> 
-          <p class="sub-heading6">Excellent skill </p>
-        </div>  
-      </div>
-      <div class="container9" style="margin-top: 10px;">
-        <div style="width: 47%; border: 1px solid black;">
-          <p class="sub-paragraph6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
-          </p>
+        <div class="container9-responsive">
+          <div class="container9">
+            <div class="container3" style="display: flex;">
+              <div class="check-mark">
+                <i class="fa-solid fa-circle-check"></i>
+              </div> 
+              <p class="sub-heading6">Expert Developer Team</p>
+            </div>
+            <div class="container3" style="margin-left: 100px; display: flex;">
+              <div class="check-mark">
+                <i class="fa-solid fa-circle-check"></i>
+              </div> 
+              <p class="sub-heading6">Excellent skill </p>
+            </div>  
+          </div>
+          <div class="container9" style="margin-top: 10px;">
+            <div style="width: 47%; border: 1px solid black;">
+              <p class="sub-paragraph6">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
+              </p>
+            </div>
+            <div style=" width: 47%; margin-left:  46px; border: 1px solid black;">
+              <p class="sub-paragraph6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
+            </p>
+            </div>  
+          </div>
         </div>
-        <div style=" width: 47%; margin-left:  46px; border: 1px solid black;">
-          <p class="sub-paragraph6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, illum? Omnis vitae eligendi,
-        </p>
-        </div>  
       </div>
     </section>
-
   </main>
   <script>
     const observer1 = new IntersectionObserver((entries) =>{
