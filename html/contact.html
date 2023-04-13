@@ -16,6 +16,7 @@
     main .fa-solid {
       color: #8d38ed;
     }
+
     main .fa-brands {
       position: relative;
       top: 22px;
@@ -93,19 +94,19 @@
     </div>
   </header>
   <script>
-      const togglebtn = document.querySelector('.toggle-btn')
-      const togglebtnIcon = document.querySelector('.toggle-btn i')
-      const dropdownMenu = document.querySelector('.dropdown')
+    const togglebtn = document.querySelector('.toggle-btn')
+    const togglebtnIcon = document.querySelector('.toggle-btn i')
+    const dropdownMenu = document.querySelector('.dropdown')
 
-      togglebtn.onclick = function(){
-          dropdownMenu.classList.toggle('open')
+    togglebtn.onclick = function () {
+      dropdownMenu.classList.toggle('open')
 
-          const isOpen = dropdownMenu.classList.contains('open')
-          togglebtnIcon.classList = isOpen
-          ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars'
+      const isOpen = dropdownMenu.classList.contains('open')
+      togglebtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
 
-      }
+    }
   </script>
 
   <!-- main section of the body -->
@@ -186,16 +187,16 @@
           <div style="display: flex;justify-content:space-between; margin-bottom:10px;">
             <div style="display: inline-block; width:260px;">
               <label>Name <span style="color: #8d38ed;">*</span></label><br>
-              <input class="name" type="text" placeholder="Your Name"/>
+              <input class="name" type="text" placeholder="Your Name" />
             </div>
             <div style="display: inline-block; width:260px;">
               <label>Email <span style="color: #8d38ed;">*</span></label><br>
-              <input class="name" type="text" placeholder="Your Email"/>
+              <input class="name" type="text" placeholder="Your Email" />
             </div>
           </div>
           <div style=" margin-bottom:10px;">
             <label>Subject</label>
-            <input class="subject" type="text" placeholder="Your Subject"/>
+            <input class="subject" type="text" placeholder="Your Subject" />
           </div>
           <div style=" margin-bottom:30px;">
             <label>Message</label><br>
@@ -219,62 +220,19 @@
   <!-- footer section of the body -->
   <footer>
     <!-- first part of footer -->
-    <div style="
-        border-bottom: 0.5px solid rgb(115, 115, 115);
-        background-color: rgb(14 24 24);
-        height: 270px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ">
-      <div style="
-          border: 0;
-          border-radius: 5px;
-          background-color: #8d38ed;
-          width: 1240px;
-          height: 205px;
-          ">
-        <div style="
-            padding: 60px;
-            display: inline-block;
-            align-items: baseline;
-            width: 470px;
-            ">
-          <h1 style="
-              color: rgb(255, 255, 255);
-              font-size: 32px;
-              font-weight: 300;
-              font-family: 'Archivo', sans-serif;
-              position: relative;
-              bottom: 8px;
-              ">
+    <div class="first-footer">
+      <div class="first-container-footer">
+        <div class="subscribe-section">
+          <h1>
             Subscribe Our Newsletter
           </h1>
-          <p style="
-              color: rgb(255, 254, 254);
-              margin-top: 15px;
-              font-size: 16px;
-              font-weight: 100;
-              font-family: 'DM Sans', sans-serif;
-              ">
+          <p>
             Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
             ullamcorper ultricies nisi. Nam eget dui.
           </p>
         </div>
-        <div style="
-            display: inline-block;
-            position: relative;
-            left: 90px;
-            bottom: 45px;
-            ">
-          <input type="text" placeholder="Enter your e-mail address..." style="
-              background-color: rgba(240, 248, 255, 0);
-              border: 1px solid #ffffff5c;
-              border-radius: 5px;
-              height: 30px;
-              width: 300px;
-              padding: 14px 16px;
-              " />
+        <div class="placeholder_btn">
+          <input type="text" placeholder="Enter your e-mail address..." />
           <button type="button" name="myButton">Get Started</button>
         </div>
       </div>
