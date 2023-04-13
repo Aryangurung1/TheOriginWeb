@@ -388,3 +388,112 @@ footer .fa-solid {
     display: none;
   }
 }
+
+/* ---------- responsive footer section ---------- */
+
+
+@media only screen and (max-width: 800px){
+  footer{
+    width: 100%;
+  } 
+
+  .contain{
+    display: flex;
+    height: 900px;
+    padding: 30px 40px;
+  }
+
+  footer .contain{
+    
+    flex-direction: column;
+  }
+
+  .innercontain{
+    width: 100%;
+  }
+
+  .innercontain img{
+    width: 10%;
+  }
+
+  .innercontain p{
+    line-height: 30px;
+    font-size: 100px;
+    margin-top: 20px;
+  }
+  
+
+  .first-footer {
+    
+   
+    width: 100%;
+    margin: auto;
+    height: 650px;
+  }
+
+  .first-container-footer {
+  
+  width: 80%;
+  padding: 30px;
+  margin-top: 5px;
+  height: 65%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  footer button {
+    margin-top: 20px;
+    width: 100%;
+    
+  }
+
+  .subscribe-section {
+    width: 85%;
+    padding: 0;
+    
+  }
+
+
+  .subscribe-section h1{
+    font-size: 30px;
+    text-align: center;
+    
+  }
+
+  .placeholder_btn{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .placeholder_btn input{
+    width: 100%;
+    padding: 14px 40px;
+  }
+
+  footer input::placeholder {
+    font-size: 15px;
+    
+    width: 100%;
+    
+  }
+
+  .footer-third-part p{
+
+    font-size: 14px;
+    text-align: center;
+    padding-top: 20px;
+    word-spacing: 2px;
+  }
+
+  .subscribe-section p{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    
+     .map {
+    display: none;
+    }
+  
+  }
+}
