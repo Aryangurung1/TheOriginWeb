@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-
     <script
       src="https://kit.fontawesome.com/9560fde36b.js"
       crossorigin="anonymous"
@@ -78,44 +77,48 @@
 
   <body>
     <header>
-      <div class="nav-bar">
-        <figure>
-          <img class="logo" src="../img/originlogo.png" alt="logo" />
-        </figure>
-        <ul class="nav-links">
-          <li><a href="#" class="links active">Home</a></li>
-          <li><a href="#" class="links">Contact</a></li>
-          <li><a href="#" class="links">Services</a></li>
-          <li><a href="#" class="links">About</a></li>
-        </ul>
-        <a href="#" class="start-btn">Get Started</a>
-        <div class="toggle-btn">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+      <div class="logo">
+          <img src="../img/originlogo.png" alt="">
       </div>
-      <div class="dropdown">
-        <li><a href="#" class="links active">Home</a></li>
-        <li><a href="#" class="links">Contact</a></li>
-        <li><a href="#" class="links">Services</a></li>
-        <li><a href="#" class="links">About</a></li>
-        <li><a href="#" class="start-btn">Get Started</a></li>
+      <div class="header-left">
+          <nav>
+              <ul>
+                  <li>
+                      <a href="" class="active">Home</a>
+                  </li>
+                  <li>
+                      <a href="">Products</a>
+                  </li>
+                  <li>
+                      <a href="">Pricing</a>
+                  </li>
+                  <li>
+                      <a href="">About</a>
+                  </li>
+              </ul>
+              <div class="login-signup">
+                  <a href="">Get Started</a>
+              </div>
+          </nav>
       </div>
-    </header>
-    <script>
-        const togglebtn = document.querySelector('.toggle-btn')
-        const togglebtnIcon = document.querySelector('.toggle-btn i')
-        const dropdownMenu = document.querySelector('.dropdown')
-
-        togglebtn.onclick = function(){
-            dropdownMenu.classList.toggle('open')
-
-            const isOpen = dropdownMenu.classList.contains('open')
-            togglebtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-
-        }
-    </script>
+      <div class="header-right">
+          <div class="login-signup">
+              <a href="">Get Started</a>
+          </div>
+          <div class="hamburger">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </div>
+  </header>
+  <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector("nav");
+      hamburger.onclick = function() {
+          nav.classList.toggle("active");
+      }
+  </script>
 
     <!-- main section of the body -->
     <main>
@@ -330,9 +333,7 @@
         </p>
       </div>
     </main>
-    
-    <page-footer></page-footer>
-    <script src="../js/footer.js"></script>
+
     
   </body>
 </html>
