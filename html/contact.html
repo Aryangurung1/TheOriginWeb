@@ -77,22 +77,45 @@
   </head>
 
   <body>
-    <!-- <header>
-    <nav>
-      <figure>
-        <a href="index.html"><img src="../img/originlogo.png" class="logo" /></a>
-      </figure>
-      <div class="lists">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#" class="active">Contact</a></li>
-          <li><a href="#">About</a></li>
+    <header>
+      <div class="nav-bar">
+        <figure>
+          <img class="logo" src="../img/originlogo.png" alt="logo" />
+        </figure>
+        <ul class="nav-links">
+          <li><a href="#" class="links active">Home</a></li>
+          <li><a href="#" class="links">Contact</a></li>
+          <li><a href="#" class="links">Services</a></li>
+          <li><a href="#" class="links">About</a></li>
         </ul>
+        <a href="#" class="start-btn">Get Started</a>
+        <div class="toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-      <button type="button" name="myButton">Get Started</button>
-    </nav>
-  </header> -->
+      <div class="dropdown">
+        <li><a href="#" class="links active">Home</a></li>
+        <li><a href="#" class="links">Contact</a></li>
+        <li><a href="#" class="links">Services</a></li>
+        <li><a href="#" class="links">About</a></li>
+        <li><a href="#" class="start-btn">Get Started</a></li>
+      </div>
+    </header>
+    <script>
+        const togglebtn = document.querySelector('.toggle-btn')
+        const togglebtnIcon = document.querySelector('.toggle-btn i')
+        const dropdownMenu = document.querySelector('.dropdown')
+
+        togglebtn.onclick = function(){
+            dropdownMenu.classList.toggle('open')
+
+            const isOpen = dropdownMenu.classList.contains('open')
+            togglebtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+        }
+    </script>
 
     <!-- main section of the body -->
     <main>
@@ -222,19 +245,19 @@
                 <span style="color: #8d38ed">help center.</span>
               </p>
             </div>
-            <div>
+            <div class="social-t">
               <a
                 href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
                 target="_blank"
-                ><i class="fa-brands fa-square-facebook"></i
+                ><i class="fa-brands fa-square-facebook "></i
               ></a>
               <a
                 href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D"
                 target="_blank"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="fa-brands fa-instagram "></i
               ></a>
               <a href="#" target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
+                ><i class="fa-brands fa-linkedin "></i
               ></a>
             </div>
           </div>
@@ -243,7 +266,7 @@
         <!-- second part of the first section of body -->
         <div class="form">
           <div class="form-first">
-            <div
+            <div class="name-email"
               style="
                 display: flex;
                 justify-content: space-between;
@@ -262,12 +285,12 @@
               </div>
             </div>
             <div style="margin-bottom: 10px">
-              <label>Subject</label>
+              <label id="subject">Subject</label>
               <input class="subject" type="text" placeholder="Your Subject" />
             </div>
             <div style="margin-bottom: 30px">
               <label>Message</label><br />
-              <textarea
+              <textarea class="messages"
                 cols="63"
                 rows="7"
                 placeholder="Your Message"
