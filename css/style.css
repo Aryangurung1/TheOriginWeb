@@ -211,7 +211,7 @@ nav button:hover {
 .subscribe-section {
   padding: 60px;
   padding-right: 0;
-  width: 500px;
+  width: 400px;
   display: inline-block;
 }
 
@@ -478,6 +478,7 @@ footer .fa-solid {
   footer button {
     margin-top: 20px;
     width: 100%;
+    margin-left: 0;
     
   }
 
@@ -531,8 +532,22 @@ footer .fa-solid {
   }
 }
 
-@media only screen and (min-width: 800px){
-  
 
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+
+
+  .placeholder_btn {
+    flex-direction: column;
+  }
+
+  .placeholder_btn input {
+    width: 100%;
+    padding: 14px 40px;
+  }
+
+  footer button {
+    margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
 }
-  
