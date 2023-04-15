@@ -80,6 +80,7 @@
         .borbox:hover{
             transform: translateY(-20px);
             transition-delay: 0.1s;
+            animation-timing-function: ease;
         }
         .borbox:hover .icon-cont{
             background-color: #5d0abb;
@@ -194,23 +195,23 @@
             opacity: 1;
           transform: translateY(0); /* move back to original position */
         }
-}
-.anim{
-    position: relative;
-    overflow: hidden;
-    width:500px;
-    height:50px;
-}
-@keyframes flow {
-  0% {
-    transform: translateX(-100%); /* move 100% left */
-  }
-  100% {
-    transform: translateX(0); /* move back to original position */
-    opacity:1;
-  }
-}
-    
+    }
+        .anim{
+            position: relative;
+            overflow: hidden;
+            width:500px;
+            height:50px;
+        }
+        @keyframes flow {
+          0% {
+            transform: translateX(-100%); /* move 100% left */
+          }
+          100% {
+            transform: translateX(0); /* move back to original position */
+            opacity:1;
+          }
+        }
+
     </style>
     <script src="https://kit.fontawesome.com/d3acb3ae7f.js" crossorigin="anonymous"></script>
 </head>
@@ -279,7 +280,9 @@
             </div>
         </div>
     </div>
+</div>
 
+<div class="container">
     <div class="container-fluid" style="margin-top: 150px;"><!--second section-->
         <div class="row"><!--text and heading-->
             <div class="col-12 col-lg-7 bor" style="padding-bottom:70px; font-size:60px; letter-spacing: 1px; font-weight: 900; color:#0D1D20; line-height: 1;">
@@ -329,8 +332,9 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container-fluid" style=" background-color: rgb(237,240,239); margin-top:100px;">
+    <div class="container-fluid section-3" style=" background-color: rgb(237,240,239); margin-top:100px;">
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col bor col-lg-4">
                 <p style="padding-top:200px;  font-size:55px; letter-spacing: 1px; font-weight: 900; color:#0D1D20; line-height: 1;">The Best Quality Services for you</p>
@@ -514,7 +518,7 @@
         </div>
     </div>
 
-   </div> 
+   
  <script src="js/bootstrap.min.js"></script> 
  <script src="js/jquery.slim.min.js"></script>
  <script src="js/popper.min.js"></script>  
