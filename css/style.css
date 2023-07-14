@@ -21,6 +21,16 @@ header {
   padding: 0 50px;
   background: #ffffff;
 }
+header .header-left nav img{
+  display: none;
+}
+header .close{
+  position: relative;
+  left: 80%;
+  top: -50px;
+  height: auto;
+  width: 20px;
+}
 header .header-left {
   display: flex;
   align-items: center;
@@ -87,13 +97,19 @@ header .header-right .hamburger div {
   header .header-right .hamburger {
     display: block;
   }
+  header .header-left nav img{
+    display: block;
+    position: relative;
+    right: 40px;
+    bottom: 18px;
+  }
   header .header-left nav {
     margin: 0;
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    top: 0;
     left: -100%;
-    width: 50%;
-    height: fit-content;
+    width: 70%;
+    height: 100%;
     background-color: rgb(14, 24, 24);
     padding: 30px;
     transition: 0.3s;
@@ -102,6 +118,9 @@ header .header-right .hamburger div {
   }
   header .header-left nav.active {
     left: 0px;
+  }
+  header .header-right .login-signup {
+    display: none;
   }
   header .header-left nav ul {
     display: block;
@@ -114,7 +133,7 @@ header .header-right .hamburger div {
 @media only screen and (max-width: 500px) {
   nav .login-signup {
     display: block;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   header .header-right .login-signup {
     display: none;
@@ -525,8 +544,6 @@ footer .fa-solid {
   
 
   .first-footer {
-    
-   
     width: 100%;
     margin: auto;
     height: 650px;
