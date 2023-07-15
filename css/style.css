@@ -26,14 +26,15 @@ header .header-left nav img{
   display: none;
 }
 header .close{
-  display: none;
+  display:none;
   color: #ffffff;
   position: relative;
   left: 95%;
   top: -50px;
+  width: 0;
   font-size: 23px;
 }
-header .close:hover{
+header nav i:hover{
   color: #8d38ed;
 }
 header .header-left {
@@ -50,12 +51,12 @@ header .header-left nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   color: #000000;
   font-family: "Archivo", sans-serif;
   font-size: 18px;
   padding: 5px 10px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 header .header-left nav ul li a:hover,header .header-left nav ul li a.active{
   color: #8d38ed;
