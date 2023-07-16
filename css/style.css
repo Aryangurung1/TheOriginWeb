@@ -144,7 +144,7 @@ header .header-right .hamburger div {
 }
 @media only screen and (max-width: 500px) {
   nav .login-signup {
-    display: block;
+    display: none;
     margin-top: 40px;
   }
   header .close{
