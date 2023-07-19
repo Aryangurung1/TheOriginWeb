@@ -413,6 +413,7 @@
       border-radius: 5px; 
       transform: translateX(-500px);
       transition: all 1.2s;
+      position: relative;
     }
 
     .back{         /* for team details background*/
@@ -551,6 +552,23 @@
       display: flex;
       justify-content: center;
     }
+
+    @media(max-width: 1400px){
+      .groupPhoto{
+        height: 70%;
+        width: 60%;
+      
+      }
+    }
+
+    @media(max-width: 1300px){
+      .groupPhoto{
+        height: 60%;
+        width: 60%;
+      
+      }
+    }
+
     @media(max-width: 1200px){
       .button{
         right: 400%;
@@ -682,6 +700,12 @@
 
         
       }
+
+      .groupPhoto{
+      width: 60%; 
+      height: 80%;
+      
+    }
       
     }
 
@@ -1004,7 +1028,7 @@
       <div class="container7">
         <div class="image2">
           <div class="groupPhoto">
-            <img style="width: 100%; height: 100%;" src="../img/group-photo-edited.jpg" alt="people" />
+            <img style="width: 100%; height: 100%; position: relative; " src="../img/group-photo-edited.jpg" alt="people" />
           </div>
           <div class="purpleBackground">  
           </div>
@@ -1156,17 +1180,17 @@
               </div> 
             </div>
             <div class="team-information">
-              <div style="display: flex;">
+              <div style="display: flex; width: 130%;">
                 <div class="linkedin-icon">
                   <a href="#"><i class="fa-brands fa-linkedin fa-xl" style="margin-top: 20px; padding-right: 8px; "></i></a>
                 </div>
-                <p class="sub-heading7">Anubhav Ratna Dhakal	</p>
+                <p class="sub-heading7" >Anubhav Ratna Dhakal	</p>
               </div>
-              <div style="display: flex;">
+              <div style="display: flex; ">
                 <div class="insta-icon">
                   <a href="#"><i class="fa-brands fa-instagram fa-xl" style="margin-top: 16px; padding-right: 11px;"></i></a>
                 </div>
-                <p class="sub-paragraph6">Chief Technical Officer</p>
+                <p class="sub-paragraph6" >Chief Technical Officer</p>
               </div>
             </div> 
           </div>
