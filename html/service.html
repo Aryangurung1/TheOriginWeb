@@ -271,10 +271,10 @@
           <i class="fa-solid fa-xmark close"></i>
             <ul>
                 <li>
-                    <a href="#"  class="active"  onclick="redirectTo('home')">Home</a>
+                    <a href="#" onclick="redirectTo('home')">Home</a>
                 </li>
                 <li>
-                    <a href="#" onclick="redirectTo('service')">Services</a>
+                    <a href="#" class="active" onclick="redirectTo('service')">Services</a>
                 </li>
                 <li>
                     <a href="#" onclick="redirectTo('about')">About</a>
@@ -299,6 +299,19 @@
         </div>
     </div>
 </header>
+
+<script>
+  hamburger = document.querySelector(".hamburger");
+  nav = document.querySelector("nav");
+  hamburger.onclick = function() {
+      nav.classList.toggle("active");
+  }
+  close = document.querySelector(".close");
+  nav = document.querySelector("nav");
+  close.onclick = function() {
+      nav.classList.toggle("active");
+  }
+</script>
 
   <!-- First section of the body -->
   <main>

@@ -283,6 +283,18 @@
             </div>
         </div>
     </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+        close = document.querySelector(".close");
+        nav = document.querySelector("nav");
+        close.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
 
     <div class="container-fluid main-bg" style="margin-top:200px; ">
         <div class="container">
@@ -596,9 +608,10 @@
    
     </div>
     
-<page-footer></page-footer>
+    <page-footer></page-footer>
 
-<script src="/js/script.js"></script>
+ <script src="/js/script.js"></script>
+
  <script src="js/bootstrap.min.js"></script> 
  <script src="js/jquery.slim.min.js"></script>
  <script src="js/popper.min.js"></script>  
