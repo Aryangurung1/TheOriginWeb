@@ -79,11 +79,13 @@
             box-sizing: border-box;
             border-radius: 5px;
             margin-bottom: 20px;
-            transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            /*transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+            transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+            margin-left: -20px;
+            margin-right: -20px;
         }
         .borbox:hover{
             transform: translateY(-20px);
-            /*transition-delay: 0.1s;*/
             /*animation-timing-function: ease;*/
         }
         .borbox:hover .icon-cont{
@@ -134,24 +136,25 @@
             color:#320f5b;
             cursor:pointer;
         }
-        .question{
+        .accordion-button{
+            color: #0D1D20;
             font-size: 19px;
             font-weight: 700;
             letter-spacing: 1px;
             padding: 30px;
             background-color: rgb(237,240,239);
-            color: #0D1D20;
             
         }
         .accordion-button:not(.collapsed)
         {
-            color:#8d38ed;
+            color:#0D1D20;
             background-color: rgb(237,240,239);
             border: none;
         }
         .accordion-button:focus {
-        outline: 0 ;
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            color:#8d38ed;
+            outline: 0 ;
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         }
         .line {
             width: 500px;
@@ -376,7 +379,7 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4"><!--4 diff boxes-->
-            <div class="col borbox">
+            <div class="col borbox" style="margin-right: 30px;">
                 <div class="icon-cont"><!--image-->
                     <i class="fa-solid fa-sack-dollar icon"></i>
                 </div>
@@ -385,7 +388,7 @@
                     <p style=" font-size: 17px; color:#587274;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 </div>
             </div>
-            <div class="col borbox">
+            <div class="col borbox" style="margin-right: 30px;">
                 <div class="icon-cont"><!--image-->
                     <i class="fa-solid fa-arrow-up-right-dots icon"></i>
                 </div>
@@ -394,7 +397,7 @@
                     <p style=" font-size: 17px; color:#587274;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
                 </div>
             </div>
-            <div class="col borbox">
+            <div class="col borbox" style="margin-right: 30px;">
                 <div class="icon-cont"><!--image-->
                     <i class="fa-solid fa-business-time icon"></i>
                 </div>
