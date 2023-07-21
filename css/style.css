@@ -19,6 +19,7 @@ header {
   justify-content: space-between;
   padding: 0 50px;
   background-color: rgb(250, 250, 250);
+
 }
 header .header-left nav img{
   display: none;
