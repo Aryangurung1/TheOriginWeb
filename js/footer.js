@@ -5,7 +5,7 @@ class FooterElement extends HTMLElement{
         `
         <footer>
         <!-- first part of footer -->
-        <div class="first-footer">
+        <div class="first-footer" id="footer">
           <div class="first-container-footer">
             <div class="subscribe-section">
               <h1>
@@ -45,24 +45,24 @@ class FooterElement extends HTMLElement{
               voluptatum vitae!
             </p>
             <a
-              href="https://www.facebook.com/people/The-Origin-Teams/100088433953540/?mibextid=ZbWKwL"
-              target="_blank"
+              href="#"
+              onclick="redirectSocialsTo('facebook')"
               ><i class="fa-brands fa-facebook"></i
             ></a>
             <a
-              href="https://www.instagram.com/theoriginteams/?igshid=Yzg5MTU1MDY%3D"
-              target="_blank"
+              href="#"
+              onclick="redirectSocialsTo('instagram')"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" onclick="redirectSocialsTo('linkedin')" ><i class="fa-brands fa-linkedin"></i></a>
           </div>
           <div style="position: relative; top: 30px" class="one">
             <h3>Navigation</h3>
             <ol>
-              <li class="aa"><a href="#">Home</a></li>
-              <li class="aa"><a href="#">Services</a></li>
-              <li class="aa"><a href="#">Contact</a></li>
-              <li class="aa"><a href="#">About</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('home')">Home</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('service')">Services</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('contact')">Contact</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('about')">About</a></li>
             </ol>
           </div>
           <div style="position: relative; top: 30px" class="one">
