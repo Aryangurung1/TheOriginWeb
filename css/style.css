@@ -419,7 +419,6 @@ footer .fa-solid {
   background-color: rgba(240, 248, 255, 0);
   border: 1px solid #ffffff5c;
   border-radius: 5px;
-  height: 30px;
   width: 300px;
   padding: 14px 16px;
 }
@@ -526,11 +525,34 @@ footer .fa-solid {
 
 /* ---------- responsive footer section ---------- */
 
+@media only screen and (max-width: 1200px){
 
-@media only screen and (max-width: 800px){
   footer{
     width: 100%;
   } 
+
+  .placeholder_btn{
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  .placeholder_btn input{
+    padding: 14px 40px;
+    height: auto;
+  }
+
+  footer button {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .first-container-footer{
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 900px){
 
   .contain{
     display: flex;
@@ -565,8 +587,6 @@ footer .fa-solid {
   }
 
   .first-container-footer {
-  
-  width: 80%;
   padding: 30px;
   margin-top: 5px;
   height: 65%;
@@ -594,14 +614,11 @@ footer .fa-solid {
     
   }
 
-  .placeholder_btn{
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .placeholder_btn input{
-    width: 100%;
-    padding: 14px 40px;
+  .placeholder_btn {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   footer input::placeholder {
