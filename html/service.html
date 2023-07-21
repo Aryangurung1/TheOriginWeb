@@ -257,7 +257,6 @@
 </head>
 
 <body>
-  <!-- Nav bar code -->
   <header>
     <div class="logo">
         <img src="../img/originlogo.png">
@@ -271,7 +270,7 @@
                     <a href="#" onclick="redirectTo('home')">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="active" onclick="redirectTo('service')">Services</a>
+                    <a href="#"  class="active" onclick="redirectTo('service')">Services</a>
                 </li>
                 <li>
                     <a href="#" onclick="redirectTo('about')">About</a>
@@ -281,13 +280,13 @@
                 </li>
             </ul>
             <div class="login-signup">
-                <a href="#footer">Get Started</a>
+                <a href="#">Get Started</a>
             </div>
         </nav>
     </div>
     <div class="header-right">
         <div class="login-signup">
-            <a href="#footer">Get Started</a>
+            <a href="#" id="scrollToFooter">Get Started</a>
         </div>
         <div class="hamburger">
             <div></div>
@@ -297,16 +296,16 @@
     </div>
 </header>
 <script>
-  hamburger = document.querySelector(".hamburger");
-  nav = document.querySelector("nav");
-  hamburger.onclick = function() {
-      nav.classList.toggle("active");
-  }
-  close = document.querySelector(".close");
-  nav = document.querySelector("nav");
-  close.onclick = function() {
-      nav.classList.toggle("active");
-  }
+    hamburger = document.querySelector(".hamburger");
+    nav = document.querySelector("nav");
+    hamburger.onclick = function() {
+        nav.classList.toggle("active");
+    }
+    close = document.querySelector(".close");
+    nav = document.querySelector("nav");
+    close.onclick = function() {
+        nav.classList.toggle("active");
+    }
 </script>
 
   <!-- First section of the body -->
@@ -531,6 +530,7 @@
 </main>
 
 <page-footer></page-footer>
+<script src="/js/script.js"></script>
 <script src="../js/footer.js"></script>
 <script src="../js/bootstrap.min.js"></script> 
 <script src="../js/jquery.slim.min.js"></script>
@@ -538,3 +538,4 @@
 
 </body>
 </html>
+
