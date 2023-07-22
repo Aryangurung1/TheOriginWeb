@@ -28,7 +28,7 @@ class FooterElement extends HTMLElement{
   
         <!-- second part of footer -->
         <div class="contain">
-          <div style="width: 400px; position: relative" class="inner-contain">
+          <div style="position: relative" class="inner-contain">
             <img src="../img/originlogo.png" style="height: auto; width: 200px" />
             <p
               style="
@@ -58,12 +58,12 @@ class FooterElement extends HTMLElement{
           </div>
           <div style="position: relative; top: 30px" class="one">
             <h3>Navigation</h3>
-            <ol>
+            <ul style="list-style: none;">
               <li class="aa"><a href="#" onclick="redirectTo('home')">Home</a></li>
               <li class="aa"><a href="#" onclick="redirectTo('service')">Services</a></li>
               <li class="aa"><a href="#" onclick="redirectTo('contact')">Contact</a></li>
               <li class="aa"><a href="#" onclick="redirectTo('about')">About</a></li>
-            </ol>
+            </ul>
           </div>
           <div style="position: relative; top: 30px" class="one">
             <h3>Contacts</h3>
