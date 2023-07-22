@@ -521,6 +521,9 @@ footer .fa-solid {
   }
 }
 
+.inner-contain{
+  width: 400px;
+}
 
 
 /* ---------- responsive footer section ---------- */
@@ -593,6 +596,7 @@ footer .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   }
 
   footer button {
@@ -648,5 +652,41 @@ footer .fa-solid {
     }
 }
 
+@media only screen and (max-width: 480px){
   
 
+  .inner-contain{
+    width: 100%;
+  }
+  .first-footer {
+      width: 100%;
+      margin: auto;
+      height: 650px;
+    }
+  
+    .first-container-footer {
+    padding: 30px;
+    margin-top: 5px;
+    height: 65%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  
+    footer button {
+      margin-top: 20px;
+      width: 100%;
+      
+    }
+  
+    .subscribe-section {
+      width: 85%;
+      padding: 0;
+      
+    }
+
+
+    .placeholder_btn input{
+      width: 85%;
+    }
+}
