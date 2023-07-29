@@ -295,6 +295,7 @@ header .header-right .hamburger div {
   display: flex;
   margin-top: 50px;
   margin-bottom: 50px;
+  gap: 20px
 }
 .subscribe-section {
   padding: 60px;
@@ -423,6 +424,11 @@ footer .fa-solid {
   border-radius: 5px;
   width: 300px;
   padding: 14px 16px;
+}
+
+.aa a{
+  text-decoration: none;
+  color: white;
 }
 /* ---------- responsive body section ---------- */
 
@@ -689,6 +695,10 @@ footer .fa-solid {
 
 
     .placeholder_btn input{
-      width: 85%;
+      width: 250px;
+    }
+
+    .placeholder_btn{
+      padding: 0;
     }
 }

@@ -1,8 +1,8 @@
-class FooterElement extends HTMLElement{
-    constructor(){
-        super();
-        this.innerHTML =
-        `
+class FooterElement extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML =
+      `
         <footer>
         <!-- first part of footer -->
         <div class="first-footer" id="footer">
@@ -67,23 +67,9 @@ class FooterElement extends HTMLElement{
           </div>
           <div style="position: relative; top: 30px" class="one">
             <h3>Contacts</h3>
-            <div
-              style="
-                width: 200px;
-                display: flex;
-                flex-direction: column;
-                margin-top: 20px;
-              "
-            >
+            <div            >
               <i class="fa-solid fa-square-phone"></i>
-              <div
-                style="
-                  margin-left: 10px;
-                  position: relative;
-                  left: 50px;
-                  bottom: 40px;
-                "
-              >
+              <div              >
                 <h4
                   style="
                     color: white;
@@ -106,12 +92,7 @@ class FooterElement extends HTMLElement{
               </div>
               <i class="fa-solid fa-square-envelope"></i>
               <div
-                style="
-                  margin-left: 10px;
-                  position: relative;
-                  left: 50px;
-                  bottom: 40px;
-                "
+
               >
                 <h4
                   style="
@@ -145,7 +126,7 @@ class FooterElement extends HTMLElement{
         </div>
       </footer> 
         `
-    }
+  }
 }
 
-window.customElements.define('page-footer',FooterElement);
+window.customElements.define('page-footer', FooterElement);
