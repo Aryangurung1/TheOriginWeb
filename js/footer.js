@@ -21,7 +21,7 @@ class FooterElement extends HTMLElement {
                 type="text"
                 placeholder="Enter your e-mail address..."
               />
-              <button type="button" name="myButton">Get Started</button>
+              <button type="button" name="myButton">Suscribe</button>
             </div>
           </div>
         </div>
