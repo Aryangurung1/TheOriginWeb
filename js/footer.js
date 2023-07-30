@@ -12,8 +12,7 @@ class FooterElement extends HTMLElement {
                 Subscribe Our Newsletter
               </h1>
               <p>
-                Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                ullamcorper ultricies nisi. Nam eget dui.
+              Subscribe to our newsletter and stay updated with the latest insights and offerings
               </p>
             </div>
             <div class="placeholder_btn">
@@ -21,7 +20,7 @@ class FooterElement extends HTMLElement {
                 type="text"
                 placeholder="Enter your e-mail address..."
               />
-              <button type="button" name="myButton">Get Started</button>
+              <button type="button" name="myButton">Suscribe</button>
             </div>
           </div>
         </div>
@@ -40,9 +39,7 @@ class FooterElement extends HTMLElement {
                 margin-top: 20px;
               "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis
-              nemo deserunt. Nemo quis quisquam deleniti veritatis, voluptates
-              voluptatum vitae!
+            A leading provider of cutting-edge solutions in the tech industry. With a strong focus on innovation and client satisfaction, we deliver top-notch services to help businesses thrive in the digital age.
             </p>
             <a
               href="#"
@@ -59,10 +56,10 @@ class FooterElement extends HTMLElement {
           <div style="position: relative; top: 30px" class="one">
             <h3>Navigation</h3>
             <ul style="list-style: none; padding:0px">
-              <li class="aa"><a href="#" onclick="redirectTo('home')">Home</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('service')">Services</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('contact')">Contact</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('about')">About</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('home')" onMouseOver="this.style.color='#8d38ed'" onMouseOut="this.style.color='white'" >Home</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('service')" onMouseOver="this.style.color='#8d38ed'" onMouseOut="this.style.color='white'">Services</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('contact')" onMouseOver="this.style.color='#8d38ed'" onMouseOut="this.style.color='white'">Contact</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('about')" onMouseOver="this.style.color='#8d38ed'" onMouseOut="this.style.color='white'">About</a></li>
             </ul>
           </div>
           <div style="position: relative; top: 30px" class="one">
