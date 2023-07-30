@@ -12,8 +12,7 @@ class FooterElement extends HTMLElement {
                 Subscribe Our Newsletter
               </h1>
               <p>
-                Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                ullamcorper ultricies nisi. Nam eget dui.
+              Subscribe to our newsletter and stay updated with the latest insights and offerings
               </p>
             </div>
             <div class="placeholder_btn">
@@ -40,9 +39,7 @@ class FooterElement extends HTMLElement {
                 margin-top: 20px;
               "
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est omnis
-              nemo deserunt. Nemo quis quisquam deleniti veritatis, voluptates
-              voluptatum vitae!
+            A leading provider of cutting-edge solutions in the tech industry. With a strong focus on innovation and client satisfaction, we deliver top-notch services to help businesses thrive in the digital age.
             </p>
             <a
               href="#"
