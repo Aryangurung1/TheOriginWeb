@@ -417,23 +417,13 @@
     }
 
     .back{         /* for team details background*/
-      background-color: rgb(233, 232, 232);
       width: 100%;
       height: 90%;
-      position: relative;
-      bottom: 80%;
-      z-index: -1;
-      border-radius: 5px;
-    }
-
-    .container8 .back{
       background-color: rgb(233, 232, 232);
-      width: 100%;
-      height: 90%;
       position: relative;
       bottom: 80%;
-      z-index: -1;
       border-radius: 5px;
+      z-index: -1;
     }
 
     .Rback{        /* for younng girl background*/
@@ -458,26 +448,17 @@
       border-radius: 5px;
       opacity: 0;
       transition: all 1s;
-    }
-    .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .back{
+    } 
+    
+    .back:hover {
       background-color: #8d38ed;
       transition: 0s;
     }
 
-    .main-container:hover .sub-container3:hover .container8-big:hover .image2:hover .portfolio{
+    .portfolio:hover{
       transition-duration:0.4s;
       transform:scale(1.05);
     }
-
-    .main-container5:hover .sub-container3:hover .container8:hover .image2 .back{
-      background-color: #8d38ed;
-      transition: 0s;
-    }
-    .main-container5:hover .sub-container3:hover .container8:hover .image2:hover .portfolio{
-      transition-duration:0.4s;
-      transform:scale(1.05);
-    }
-  
     .linkedin-icon a{
       color: #8d38ed;
     }
@@ -677,9 +658,9 @@
         position: relative;
         top: 5px;
       }
-    .container8 .image2{
-        height: 100%;
-    }
+      .container8 .image2{
+          height: 100%;
+      }
       .insta-icon{
         position: relative;
         top: 8px;
@@ -694,18 +675,11 @@
       .heading4{
         position: relative;
         margin-bottom: 3%;
-     
-     
-
-        
       }
-
       .groupPhoto{
       width: 60%; 
       height: 80%;
-      
-    }
-      
+      }
     }
 
     @media(max-width:812px){
@@ -1133,7 +1107,6 @@
         </p>
         <div class="button-container" style="width: 20px;">
           <button type="button" name="myButton" class="button" >
-              
             Meet Our Team
           </button>
         </div>
@@ -1143,15 +1116,13 @@
     <section class="main-container5" style="margin-top: 10%;" >
       <div class="heading4" >
         <p>Developer Department</p>
-        </div>
+      </div>
       <div class="sub-container3">
         <div class="sub-container4">
           <div class="container8" >
             <div class="image2">
-              <img class="portfolio" src="../img/young-girl.png" alt="younggirl"/>
-              <div class="back">
-                <!--background colour for portfolio-->
-              </div>
+              <img class="portfolio" src="../img/young-girl.png" alt="younggirl"/> 
+              <div class="back"></div>
             </div>
             <div class="team-information">
               <div style="display: flex;">
