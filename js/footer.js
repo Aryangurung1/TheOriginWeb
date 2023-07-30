@@ -59,10 +59,10 @@ class FooterElement extends HTMLElement {
           <div style="position: relative; top: 30px" class="one">
             <h3>Navigation</h3>
             <ul style="list-style: none; padding:0px">
-              <li class="aa"><a href="#" onclick="redirectTo('home')">Home</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('service')">Services</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('contact')">Contact</a></li>
-              <li class="aa"><a href="#" onclick="redirectTo('about')">About</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('home')" onMouseOver="this.style.color='purple'" onMouseOut="this.style.color='white'" >Home</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('service')" onMouseOver="this.style.color='purple'" onMouseOut="this.style.color='white'">Services</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('contact')" onMouseOver="this.style.color='purple'" onMouseOut="this.style.color='white'">Contact</a></li>
+              <li class="aa"><a href="#" onclick="redirectTo('about')" onMouseOver="this.style.color='purple'" onMouseOut="this.style.color='white'">About</a></li>
             </ul>
           </div>
           <div style="position: relative; top: 30px" class="one">
