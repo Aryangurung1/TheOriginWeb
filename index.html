@@ -101,6 +101,9 @@
         margin-top: 80px;
         padding: 30px;
       }
+      #borbox-margin{
+        margin-right: 30px;
+      }
 
       .borbox {
         padding: 20px;
@@ -197,6 +200,44 @@
         outline: 0;
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
       }
+      .second-description{
+        font-family: 'Archivo', sans-serif;
+        padding-top: 50px;
+        font-size: 17px;
+        color: #587274;
+      }
+      #safe-place{
+        font-size: 65px;
+        font-weight: 900;
+        color: #0d1d20;
+        line-height: 1;
+      }
+      #quote{
+        font-size: 54px;
+      }
+      .third-heading{
+       padding-top: 200px;
+       font-size: 55px;
+       letter-spacing: 1px;
+       font-weight: 900;
+       color: #0d1d20;
+       line-height: 1;
+              
+      }
+      .third-description{
+        padding-bottom: 100px; font-size: 17px; color: #587274
+      }
+      .fourth-heading{
+        padding-top: 40px;
+        font-size: 55px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        color: #0d1d20;
+        line-height: 1;
+      }
+      .img-container{
+        margin-top: 600px;
+      }
 
       .line {
         width: 500px;
@@ -269,6 +310,14 @@
         height: 50px;
       }
 
+      .heading-second{
+        padding-bottom: 70px;
+        font-size: 60px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        color: #0d1d20;
+        line-height: 1;
+      }
       @keyframes flow {
         0% {
           transform: translateX(-100%);
@@ -285,6 +334,64 @@
       .accordion-body {
         background-color: rgb(237, 240, 239);
       }
+      @media(min-width:300px) and (max-width:600px){
+        .prac2 {
+        height: 100vh;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .line{
+        width:350px;
+      }
+      .img-container{
+        margin-top: 400px;
+      }
+      .prac1 {
+        height: 55vh;
+      }
+      #safe-place{
+        font-size: 40px;
+      }
+      #quote{
+        font-size: 40px;
+      }
+      .second-section, .third-section, .fourth-section{
+        padding-left: 30px;
+        padding-right:30px;
+      }
+      .heading-second{
+        margin-top: 10px;
+        padding-bottom: 0px;
+        font-size: 40px;
+        text-align: center;
+      }
+      .borbox{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+      }
+      .borbox:hover{
+        transform:none;
+      }
+      .second-description{
+        padding-bottom: 50px;
+        text-align: center;
+      }
+      .third-heading{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .third-description{
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      .fourth-heading{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+    }
 
       @media (min-width: 1350px) and (max-width: 1550px) {
         .main-bg {
@@ -365,17 +472,18 @@
         <div class="row">
           <!--image section-->
           <div class="col-12 prac1 col-lg-6 order-lg-2" style="padding: 30px">
-            <div class="container rel">
+            <div class="container img-container rel">
               <img
                 class="img-fluid abs back"
                 src="img/index.jpg"
-                style="max-height: 87vh"
+                style="max-height: 87vh; bottom:0"
               />
               <img
                 class="img-fluid abs girl"
                 src="img/young-girl.png"
                 style="
                   z-index: 2;
+                  bottom:0;
                   max-height: 100vh;
                   margin-top: -13vh;
                   margin-left: 10px;
@@ -402,14 +510,7 @@
               </h6>
             </div>
             <div
-              class="row move text-center text-lg-start"
-              style="
-                font-size: 65px;
-                font-weight: 900;
-                color: #0d1d20;
-                line-height: 1;
-              "
-            >
+              class="row move text-center text-lg-start" id="safe-place">
               Safe Place for Business to grow
             </div>
             <div class="row move">
@@ -449,8 +550,8 @@
                 style="z-index: 3; margin-top: 50px; margin-left: 10px"
               >
                 <i
-                  class="fa-solid fa-quote-left"
-                  style="font-size: 54px; color: #8d38ed"
+                  class="fa-solid fa-quote-left" id="quote"
+                  style=" color: #8d38ed"
                 ></i>
               </div>
 
@@ -487,33 +588,16 @@
       </div>
     </div>
 
-    <div class="container" style="margin-top: 400px">
-      <div class="container-fluid" style="margin-top: 150px">
+    <div class="container second-section">
+      <div class="container" style="margin-top: 150px">
         <!--second section-->
         <div class="row">
           <!--text and heading-->
-          <div
-            class="col-12 col-lg-7 bor"
-            style="
-              padding-bottom: 70px;
-              font-size: 60px;
-              letter-spacing: 1px;
-              font-weight: 900;
-              color: #0d1d20;
-              line-height: 1;
-            "
-          >
+          <div class="col-12 col-lg-7 bor heading-second">
             The Best Services for your future company
           </div>
           <div
-            class="col bor"
-            style="
-              font-family: 'Archivo', sans-serif;
-              padding-top: 50px;
-              font-size: 17px;
-              color: #587274;
-            "
-          >
+            class="col bor second-description">
             A pioneering tech solutions provider, committed to innovation and
             client satisfaction. Thrive in the digital age with our top-notch
             offerings.
@@ -521,7 +605,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
           <!--4 diff boxes-->
-          <div class="col borbox" style="margin-right: 30px">
+          <div class="col borbox" id="borbox-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-sack-dollar icon"></i>
@@ -536,7 +620,7 @@
               </p>
             </div>
           </div>
-          <div class="col borbox" style="margin-right: 30px">
+          <div class="col borbox" id="borbox-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-arrow-up-right-dots icon"></i>
@@ -550,7 +634,7 @@
               </p>
             </div>
           </div>
-          <div class="col borbox" style="margin-right: 30px">
+          <div class="col borbox" id="borbox-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-business-time icon"></i>
@@ -587,22 +671,13 @@
       class="container-fluid section-3"
       style="background-color: rgb(237, 240, 239); margin-top: 100px"
     >
-      <div class="container">
+      <div class="container third-section">
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col bor col-lg-4">
-            <p
-              style="
-                padding-top: 200px;
-                font-size: 55px;
-                letter-spacing: 1px;
-                font-weight: 900;
-                color: #0d1d20;
-                line-height: 1;
-              "
-            >
+            <p class="third-heading">
               The Best Quality Services for you
             </p>
-            <p style="padding-bottom: 100px; font-size: 17px; color: #587274">
+            <p class="third-description">
               Our team delivers exceptional solutions tailored to your needs.
               Experience excellence with us.
             </p>
@@ -766,20 +841,11 @@
       "
     >
       <!--last section-->
-      <div class="container">
+      <div class="container fourth-section">
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col">
             <!--div 1-->
-            <p
-              style="
-                padding-top: 40px;
-                font-size: 55px;
-                letter-spacing: 1px;
-                font-weight: 900;
-                color: #0d1d20;
-                line-height: 1;
-              "
-            >
+            <p class="fourth-heading">
               Frequently Asked Questions
             </p>
           </div>
