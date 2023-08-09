@@ -36,6 +36,11 @@ header .close{
   width: 0;
   font-size: 23px;
 }
+
+.header-left nav ul{
+  padding-left: 0;
+  margin: 0;
+}
 header nav i:hover{
   color: #8d38ed;
 }
@@ -43,9 +48,9 @@ header .header-left {
   display: flex;
   align-items: center;
 }
-header .header-left nav {
+/* header .header-left nav {
   margin-left: 50px;
-}
+} */
 header .header-left nav ul {
   list-style: none;
   display: flex;
