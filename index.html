@@ -100,7 +100,7 @@
         margin-top: 80px;
         padding: 20px;
       }
-      #borbox-margin{
+      #box-margin{
         margin-right: 30px;
       }
 
@@ -399,6 +399,11 @@
           font-size: 22px;
         }
       }
+      @media(min-width:1000px)and (max-width:1199px){
+        .line{
+          width:200px;
+        }
+      }
       @media(min-width:300px) and (max-width:420px){
         .prac1{
           padding-bottom: 30px;
@@ -468,7 +473,42 @@
       }
 
       }
-      @media(min-width:300px) and (max-width:768px){
+      @media(min-width:768px) and (max-width:1199px){
+        .prac1{
+          padding-bottom: 60px;
+          padding-left:40px;
+          padding-right: 40px;
+        }
+        .prac2{
+          padding-bottom: 490px;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        .title{
+        font-size:14px;
+      }
+      .second-section{
+        padding-left: 50px;
+        padding-right: 10px;
+      }
+       .third-section, .fourth-section{
+        padding-left: 40px;
+        padding-right:40px;
+      }
+      .borbox:hover{
+        transform:none;
+      }
+      .borbox{
+        margin-right: 0;
+      }
+      #box-margin{
+        margin-right: 20px;
+      }
+      
+      
+        
+      }
+      @media(min-width:300px) and (max-width:767px){
       .learn,.connect{
         font-size: 11px;
       }
@@ -691,7 +731,7 @@
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4">
           <!--4 diff boxes-->
-          <div class="col borbox" id="borbox-margin">
+          <div class="col borbox" id="box-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-sack-dollar icon"></i>
@@ -706,7 +746,7 @@
               </p>
             </div>
           </div>
-          <div class="col borbox" id="borbox-margin">
+          <div class="col borbox " id="box-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-arrow-up-right-dots icon"></i>
@@ -720,7 +760,7 @@
               </p>
             </div>
           </div>
-          <div class="col borbox" id="borbox-margin">
+          <div class="col borbox" id="box-margin">
             <div class="icon-cont">
               <!--image-->
               <i class="fa-solid fa-business-time icon"></i>
