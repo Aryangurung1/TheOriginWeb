@@ -19,12 +19,12 @@
         font-family: "Archivo", sans-serif;
       }
 
-      .prac2 {
-        height: 160vh;
-      }
-
       .prac1 {
-        height: 100vh;
+        padding-bottom: 110px;
+        padding-left:30px;
+        padding-right: 30px;
+        padding-top:30px;
+        
       }
 
       .main-bg {
@@ -95,11 +95,10 @@
       }
 
       .opinion {
-        max-width: 520px;
         background-color: rgb(237, 240, 239);
         border-radius: 3px;
         margin-top: 80px;
-        padding: 30px;
+        padding: 20px;
       }
       #borbox-margin{
         margin-right: 30px;
@@ -236,10 +235,14 @@
         line-height: 1;
       }
       .img-container{
-        margin-top: 600px;
+        margin-top: 700px;
       }
       .opinion-style{
         font-weight: 500; font-size: 22px
+      }
+      .second-section{
+        margin-top: 200px;
+        margin-bottom:200px;
       }
 
       .line {
@@ -337,7 +340,183 @@
       .accordion-body {
         background-color: rgb(237, 240, 239);
       }
-      @media (min-width:300px) and (max-width:420px){
+      @media(min-width:300px) and (max-width:350px){
+        .img-container{
+          margin-top:250px ;
+        }
+        .line{
+        width:300px;
+      }
+      }
+      @media(min-width:351px) and (max-width:420px){
+        .img-container{
+          margin-top:400px ;
+        }
+        .line{
+        width:330px;
+      }
+      }
+      @media(min-width:421px)and (max-width:490px){
+        .img-container{
+          margin-top: 440px;
+        }
+        .line{
+        width:340px;
+      }
+      }
+      @media(min-width:491px)and (max-width:520px){
+        .img-container{
+          margin-top: 490px;
+        }
+        .line{
+        width:350px;
+      }
+      }
+      @media(min-width:521px)and (max-width:600px){
+        .img-container{
+          margin-top: 490px;
+        }
+        .line{
+        width:350px;
+      }
+      }
+      @media(min-width:601px)and (max-width:650px){
+        .img-container{
+          margin-top: 550px;
+        }
+        .line{
+          width:440px;
+        }
+      }
+      @media(min-width:651px)and (max-width:768px){
+        .line{
+          width:400px;
+        }
+        #safe{
+          font-size: 22px;
+        }
+      }
+      @media(min-width:300px) and (max-width:420px){
+        .prac1{
+          padding-bottom: 30px;
+          padding-top: 0;
+        }
+        .prac2{
+          padding-bottom: 420px;
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+        .title{
+        font-size:10px;
+      }
+        .second-section, .third-section, .fourth-section{
+        padding-left: 30px;
+        padding-right:30px;
+      }
+      }
+      @media(min-width:421px) and (max-width:520px){
+        .prac1{
+          padding-bottom: 60px;
+          padding-left:60px;
+          padding-right: 60px;
+        }
+        .prac2{
+          padding-bottom: 480px;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        .title{
+        font-size:13px;
+      }
+        .second-section, .third-section, .fourth-section{
+        padding-left: 60px;
+        padding-right:60px;
+      }
+      }
+      @media(min-width:521px) and (max-width:650px){
+        .prac1{
+          padding-bottom: 60px;
+          padding-left:40px;
+          padding-right: 40px;
+        }
+        .prac2{
+          padding-bottom: 490px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+        .title{
+        font-size:14px;
+      }
+        .second-section, .third-section, .fourth-section{
+        padding-left: 40px;
+        padding-right:40px;
+      }
+      }
+      @media(min-width:651px) and (max-width:768px){
+        .prac1{
+          padding-bottom: 60px;}
+          
+        .prac2{
+          padding-bottom: 500px;
+          
+        }
+        .title{
+        font-size:14px;
+      }
+    
+      }
+      @media(min-width:300px) and (max-width:768px){
+      .learn,.connect{
+        font-size: 11px;
+      }
+      #safe-place{
+        font-size: 30px;
+      }
+      #quote{
+        font-size: 30px;
+      }
+      .heading-second{
+        margin-top: 10px;
+        padding-bottom: 0px;
+        font-size: 40px;
+        text-align: center;
+      }
+      .borbox{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 40px;
+      }
+      .borbox:hover{
+        transform:none;
+      }
+      .second-description{
+        padding-bottom: 50px;
+        text-align: center;
+      }
+      .third-heading{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .third-description{
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      .fourth-heading{
+        font-size: 30px;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+      .opinion-style{
+        font-size: 15px;
+        font-weight: 0;
+      }
+
+      }
+
+
+     
+      /*@media (min-width:300px) and (max-width:420px){
         .prac2 {
         height: 100vh;
         padding-left: 30px;
@@ -437,7 +616,7 @@
         .main-bg {
           height: 100vh;
         }
-      }
+      }*/
     </style>
     <script
       src="https://kit.fontawesome.com/d3acb3ae7f.js"
@@ -505,8 +684,8 @@
       <div class="container">
         <div class="row">
           <!--image section-->
-          <div class="col-12 prac1 col-lg-6 order-lg-2" style="padding: 30px">
-            <div class="container img-container rel">
+          <div class="col-12 prac1 col-lg-6 order-lg-2">
+            <div class="container rel img-container">
               <img
                 class="img-fluid abs back"
                 src="img/index.jpg"
@@ -532,7 +711,6 @@
               class="row move mx-auto mx-lg-2"
               style="
                 background-color: rgb(237, 240, 239);
-                width: 300px;
                 border-radius: 5px;
                 margin-bottom: 50px;
               "
@@ -623,7 +801,7 @@
     </div>
 
     <div class="container second-section">
-      <div class="container" style="margin-top: 150px">
+      <div class="container">
         <!--second section-->
         <div class="row">
           <!--text and heading-->
